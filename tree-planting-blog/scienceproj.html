@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mitigating Climate Change</title>
+
+	<!-- Tangle -->
+	<script type="text/javascript" src="Tangle.js"></script>
+
+	<!-- TangleKit (optional) -->
+	<link rel="stylesheet" href="TangleKit.css" type="text/css">
+	<script type="text/javascript" src="mootools.js"></script>
+	<script type="text/javascript" src="sprintf.js"></script>
+	<script type="text/javascript" src="BVTouchable.js"></script>
+	<script type="text/javascript" src="TangleKit.js"></script>
+
+	<!-- script -->
+	<script type="text/javascript">
+
+		function setUpTangle () {
+
+			var fourthpara = document.getElementById("fourthparagraph");
+			var seventhpara = document.getElementById("seventhparagraph");
+
+			var fourthparatangle = new Tangle(fourthpara, {
+				initialize: function() {
+					this.carbonintake = 10000000000;
+				},
+				update: function() {
+					this.treeamount = Math.round((this.carbonintake * 2000)/48);
+				}
+			});
+
+			var seventhparatangle = new Tangle(seventhpara, {
+				initialize: function () {
+					this.trees = 416;
+					this.squarefeetpertree = 150;
+				},
+				update: function () {
+					this.kilometers = Math.round(((this.trees*this.squarefeetpertree)/(1.076*(10**7)))*1000000000)
+				}
+			});
+		}
+
+	</script>
+
+	<!-- style -->
+	<style type="text/css">
+		p {
+			margin-left: 80px;
+			margin-right: 80px;
+		}
+		h1, h2, h3 {
+			text-align: center;
+		}
+		body {
+			background-color: #e6f7ff;
+		}
+	</style>
+</head>
+
+<body onload="setUpTangle();">
+
+	<h1>Mitigating Climate Change</h1>
+	<h2>Can Trees Help Reduce Atmospheric Carbon?</h2>
+	<h3>By Varin Sikka, IL5, KLS</h3>
+
+	<p id="firstparagraph">
+		According to NASA, we emit ~10 gigatons of carbon into the atmosphere every year (we emit far more carbon every year, but ~10 gigatons is the amount of carbon that is added to the atmosphere and not absorbed by trees, the ocean, or anything else). According to three experts on Quora (an unnamed research engineer, Frank Roeske and Riggald Eux), there is a total of ~3,200 gigatons of CO2 in the atmosphere, and of this ~1,100 gigatons of CO2 have been added due to human activity since 1880. There are about 3 trillion trees in the world (<a href="https://www.gotreequotes.com/how-many-trees-in-world/#:~:text=Globally%2C%20there%20are%20estimated%20to%20be%203.04%20trillion%20trees.&text=This%20means%20that%20there%20are,for%20every%20person%20on%20earth.">Source: gotreequotes.com</a>), and because of deforestation in the Amazon rainforests, Indonesia, and many other parts of the world (<a href="https://www.worldwildlife.org/stories/11-of-the-world-s-most-threatened-forests">Source: WWF</a>), this number is decreasing. People are also thinking about, and launching, initiatives to plant more trees around the world. So the questions I want to explore are: What can we do using trees to reduce the excess carbon in our atmosphere? Is this feasible? And what would it take?
+	</p>
+
+	<p id="secondparagraph">
+		One question people often ask is, since the trees are on the ground, and the CO2 is in the atmosphere, sometimes miles above the trees, does it even make sense to use trees for carbon extraction? Since the air constantly keeps moving, do the air molecules come down and bounce off trees? To answer this question, <b>my first experiment</b> was to see how air molecules travel within a closed room. It turns out air molecules are constantly moving around, at 300-400 meters per second (<a href="https://www.education.vic.gov.au/school/teachers/teachingresources/discipline/science/continuum/Pages/particles.aspx#:~:text=The%20oxygen%20and%20nitrogen%20molecules,no%20loss%20of%20kinetic%20energy.">Source: Department of Education, Australia</a>), or 675 to 900 mph! I tested this by checking how long it takes perfume to travel from one corner of a room to another. I tried this by having my helper release perfume at the top of one corner of a 25 foot by 15 foot room. I stood on the other end of the room (about 232 inches away) and could correctly recognize the smell of the perfume 70 seconds later. So the air moved at ~3.3 inches per second (There was some human error here because initially I couldn’t recognize the smell, but I did this experiment again with me knowing the smell of the perfume and got a similar rate -- 170 inches in about 52 seconds). While this seems slow (and keep in mind that this is without the influence of wind, jet streams, etc), most atmospheric CO2 resides in the lower stratosphere, which is ~9.3 miles above sea level. This means that it would take ~2 days for a molecule of CO2 to travel from the lower stratosphere to the leaves of a tree. Okay, so trees could do the job. Even if there were no hurricanes and jet streams etc., air would move around the world and make its way down to trees.
+	</p>
+
+	<p id="thirdparagraph">
+		Next, to understand how much carbon a tree can absorb, I measured the increase in the carbon content in two trees in my backyard over ~12 weeks. These are a type of cherry tree called drooping/weeping cherry. Their average current weight is ~25 lbs. I measured the weight by the thickness of the trunk (about 1.5 inches) and their height (about 8 feet), and then adding a small percentage of weight from the leaves, and using the average density of a cherry tree (750 kg / m^3) to calculate the weight. 25lbs seems about right for my trees. As the trees get older, a lot more carbon will come into the branches and of course the trunk will keep getting bigger. I took three measurements, every 4 weeks, and the volume of the trees grew by about 10% over the 12 weeks. My estimate is these trees added about 4 lbs of weight, of which about 2.5lbs was the weight of carbon. So over 12 weeks, they absorbed roughly 2.5lbs of carbon from the air, and over a year they will take out roughly 12-13 lbs of carbon from the air.
+	</p>
+
+	<p id="fourthparagraph">
+		According to usda.gov, a mature tree absorbs 48 pounds of carbon per year. I can see how in 10 years my trees will be absorbing that much carbon too. That carbon extraction rate means that in order to absorb the extra <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1000000000" data-max="20000000000" data-step="1000000000"> tons of carbon</span> that we emit into the atmosphere annually, we need to plant <b data-var="treeamount"> trees</b>! This excludes the remaining 300+ gigatons of excess carbon in the atmosphere that we’ve been emitting into the atmosphere since the 1800s, and to actually get rid of this, we would have to plant billions more trees.
+
+	</p>
+
+	<p id="fifthparagraph">
+		Planting this many trees is extremely hard. First, it would take years for those trees to mature, and those trees wouldn’t start absorbing carbon at the aforementioned rate of 48 pounds per year until the 2030s (assuming we instantly planted 416 billion mature trees today). Second, we don’t have enough space for those trees.
+	</p>
+
+	<p id="sixthparagraph">
+		According to ourworldindata.org, ~29% of the Earth’s surface (or ~149 million square kilometers) consists of land, and the rest is all ocean. Approximately 71% of this land is habitable (as in, trees can be planted there). The rest is either made up of glaciers or barren land (deserts, salt flats, etc). Of the habitable land, ~1% is used for urban and built-up areas, another ~1% consists of freshwater (rivers, lakes), ~11% consists of shrubland, ~37% consists of forests, and a gargantuan ~50% of all habitable land goes to agriculture. This is roughly 51 million square kilometers of land used for agriculture! Of that, ~77% (that’s ~40 million square kilometers) is used for livestock (raising cows and other animals for food), while the remaining ~23% is used for crops. Despite this, meat and dairy products only provide ~18% of the global calorie supply, and ~37% of the global protein supply. Everything else comes from plants.
+	</p>
+
+	<!-- Clarify language around cities and shrubland usage -->
+	<p id="seventhparagraph">
+		A general guideline for planting medium-sized trees is to plant them 25-40 feet apart (<a href="https://www.arborday.org/trees/righttreeandplace/size.cfm">Source: Arbor Day Foundation</a>). Even if we were to plant our 416 billion trees just 7 feet apart, each mature tree would need <span class="TKAdjustableNumber" data-var="squarefeetpertree" data-min="100" data-max="1000" data-step="10"> square feet</span> of space. So, to plant <span class="TKAdjustableNumber" data-var="trees" data-min="350" data-max="1000" data-step="10"> billion trees</span>, we would need <b data-var="kilometers"> square kilometers</b> of space. Slowing urban sprawl to prevent them from using land won't help us get more land to plant trees considering how little land they use, and replacing shrubland with forest is pointless since shrubs also extract carbon from the atmosphere. This means that the only two sources of additional land for forests are 51 million square kilometers of agriculture and 28 million square kilometers of habitable barren land. Transforming barren land is rather simple in principle, because usually simply planting trees in barren areas will make the areas not barren (provided they get enough care, fertilizers, water, etc). If we could lower our meat consumption through lifestyle changes and also by adopting new types of food (like Impossible burgers), we can also remove the immense amount of land used for livestock production and replace it with forested land.
+	</p>
+
+	<p id="eighthparagraph">
+		There is an initiative underway called 1 trillion trees that aims to plant 1 trillion trees by 2030 (Source: onetrilliontrees.org). Assuming no further deforestation, no further increase in land for livestock, and (this is the big one) that there is no additional human-produced carbon coming into the atmosphere, this would require a minimum of 15 million square kilometers, and 10 years from the time of planting for the trees to start absorbing 48 pounds of carbon per year. Once they are all at that maturity, they will be able to take out an impressive 22 gigatons of Carbon out of the air every year, but by then we will have a lot more CO2, and carbon, to be removed, than we have today. Realistically, probably another 100 gigatons by then.
+	</p>
+
+	<p id="ninthparagraph">
+		How would we plant this many trees? If every human on the planet took it upon themselves to plant trees, 460 billion trees would mean each one of us needs to plant ~65 trees. If we did a tree per month, this is more than 5 years. And a trillion trees is more than twice this. Perhaps in the western countries we can, and should, do more. Clearly this will be a mammoth task that will have to be institutionalized somehow, and organizations will need to be incentivized to plant and maintain trees.
+	</p>
+
+	<p id="tenthparagraph">
+		Altogether, this seems like a tall order. While I believe that planting trees is a good idea, and beyond the climate benefits, trees improve the aesthetics and biodiversity around us, I think that trees alone will not get us there. We need new, technological solutions to extract carbon from the air that are more efficient, cheaper and faster than planting trees.
+	</p>
+
+</body>
+</html>
