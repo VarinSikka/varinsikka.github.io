@@ -46,10 +46,10 @@
 
 			var fourthparatangle = new Tangle(fourthpara, {
 				initialize: function() {
-					this.carbonintake = 10000000000;
+					this.carbonintake = 10;
 				},
 				update: function() {
-					this.treeamount = Math.round((this.carbonintake * 2000)/48);
+					this.treeamount = Math.round(((this.carbonintake * 2000)/48)*1000000000);
 				}
 			});
 
