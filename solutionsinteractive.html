@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing for ac</title>
+	<meta charset="utf-8"/>
+
+	<!-- Tangle -->
+	<script type="text/javascript" src="Tangle.js"></script>
+
+	<!-- TangleKit (optional) -->
+	<link rel="stylesheet" href="TangleKit.css" type="text/css">
+	<script type="text/javascript" src="mootools.js"></script>
+	<script type="text/javascript" src="sprintf.js"></script>
+	<script type="text/javascript" src="BVTouchable.js"></script>
+	<script type="text/javascript" src="TangleKit.js"></script>
+
+    <!-- <script type="text/javascript" src="Script/project/main.js"></script>
+    <script type="text/javascript" src="Script/project/formatters.js"></script>
+    <script type="text/javascript" src="Script/project/controls.js"></script>
+    <script type="text/javascript" src="Script/project/views.js"></script>
+    <script type="text/javascript" src="Script/project/derivedConstants.js"></script>
+    <script type="text/javascript" src="Script/project/worksheetScripts.js"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css" /> -->
+
+    <script type="text/javascript">
+
+    	function setUpTangle () {
+
+			var analysis1 = document.getElementById("treeAnalysis1");
+			var analysis2 = document.getElementById("treeAnalysis2");
+			var analysis4 = document.getElementById("solventAnalysis1");
+			var analysis5 = document.getElementById("climeworksAnalysis1");
+			var analysis6 = document.getElementById("ceAnalysis1");
+
+			var analysis1Tangle = new Tangle(analysis1, {
+				initialize: function() {
+					this.carbonintake = 10;
+				},
+				update: function() {
+					this.treeamount = Math.round((this.carbonintake * 2000)/13);
+				}
+			})
+
+			var analysis2Tangle = new Tangle(analysis2, {
+				initialize: function() {
+					this.treespace = 150;
+					this.treeamount = 1538;
+				},
+				update: function() {
+					this.treespaceamount = Math.round((this.treespace * (this.treeamount)/1000)/10.76);
+				}
+			})
+
+			var analysis4Tangle = new Tangle(analysis4, {
+				initialize: function() {
+					this.carbonintake = 10;
+				},
+				update: function() {
+					this.solventNeeded_mea = Math.round(this.carbonintake*(3/4));
+					this.solventNeeded_mdea = Math.round(this.carbonintake*(48/44));
+					this.solventNeeded_dea_dga = Math.round(this.carbonintake*(49/44));
+				}
+			})
+
+			var analysis5Tangle = new Tangle(analysis5, {
+				initialize: function() {
+					this.carbonintake = 10;
+				},
+				update: function() {
+					this.climeDacsBuilt = Math.round(this.carbonintake/(4000*1.10231*(27/99))*1000);
+				}
+			})
+
+			var analysis6Tangle = new Tangle(analysis6, {
+				initialize: function() {
+					this.carbonintake = 10;
+				},
+				update: function() {
+					this.ceDacsBuilt = Math.round(this.carbonintake/(1000000*(27/99))*10000000);
+				}
+			})
+
+			;
+		}
+
+    </script>
+
+    <style type="text/css">
+    	td, th {
+    		border: 1.5px solid #000000;
+    		padding: 4px;
+    		width: 300px;
+    	}
+
+    	.contextp {
+    		width: 70%;
+    	}
+
+    	.datimgs {
+    	}
+    </style>
+</head>
+
+<body onload="setUpTangle();">
+
+	<!-- Analyses to implement:
+		First 2 are unimplemented ones from original proj: How many trees do we need to plant (result) based on the amount of carbon a tree absorbs annually (calc: 13 pounds of carbon/yr) and the amount of carbon we emit into the atmosphere annually? (adj. val: 10 gigatons of carbon/yr)
+		and:
+		How much area (result: in sq. km) will x amount of trees (adj. val: default 1.607 trillion trees) take up if we give the y sq. ft of space (adj. val: default 150 sq. ft)?
+
+		DAC analyses:
+		For x amount of carbon we emit yearly (adj. val: default 10 gigatons of carbon), how much sorbent do we need?
+		For x amount of carbon we emit yearly (adj. val: default 10 gigatons of carbon), how much solvent do we need?
+		Where do we get them from? (not an interactive analysis?)
+		How many orcas do we need to build for x amount of carbon emitted yearly (adj.val: def 10 gigs)? CE facilities?
+		How much area do we need to build the orcas/CE facilities?
+		How long does/will it take to build each? (not an interactive analysis)
+		(maybe don't include) Where do we put the carbon? Volume of 10gt/visual representation.
+
+		Other tasks:
+		Research Carbon Engineering DAC engineering, take notes
+		Research how solvents work
+		Research sorbent + solvent production
+		Research efficiency of solvents
+		SUPER IMPORTANT: Add sources
+		Draft email to send to carbon engineering guys? (I was thinking we do this if we're unable to find some info on the facility i.e size, maybe do the same for climeworks)
+		How big would one of our moss factories be?
+		Research blogging websites that have commenting functionality; substack, medium, etc. Use for moving initial blog
+	 -->
+
+	 <h1>Varin's Blog</h1>
+
+	 <p class="contextp">As I talked about in my last blog, we need to plant way too many trees (specifically ~1.607 trillion) in order to go carbon neutral. I decided to put a spin on two important pieces of data from it by making them interactive. Here, we have some adjustable values that when adjusted, give different results, so you can see what different plans of action we'd need to do in different scenarios. The first of these shows how many trees we'd need to plant based on different amounts of carbon that we emit annually. <br><br>The controls are simple: click and hold the blue underlined value in the middle column, then while still holding down your mouse, move it left or right to decrease and increase the value.</p>
+
+	 <table class="analysesTable" id="treeAnalysis1">
+	 	<tr class="analysis" id="an1">-
+	 		<td>A tree absorbs 13 pounds of carbon annually (Source: <a href="https://www.usda.gov/media/blog/2015/03/17/power-one-tree-very-air-we-breathe">usda.gov</a> and additional calculations done).</td>
+	 		<td>So, to absorb <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1" data-max="20" data-step="1"> billion US tons of carbon</span>...</td>
+	 		<td>...we need to plant <b data-var="treeamount"> billion trees</b>.</td>
+	 	</tr>
+	 </table>
+
+	 <p class="contextp">Trees, of course, require space to plant. We need quite a lot of land area in order to plant a lot of them. So, the next analysis would be one that shows how much area we need to plant trees based on how many trees we're planting and how much space we give each tree. <br><br>The controls are the same as before.</p>
+
+	 <table class="analysesTable" id="treeAnalysis2">
+	 	<tr class="analysis" id="an2">
+	 		<td>Assume one tree needs <span class="TKAdjustableNumber" data-var="treespace" data-min="150" data-max="900" data-step="10">  square feet of space.</td>
+	 		<td>So, in order to plant <span class="TKAdjustableNumber" data-var="treeamount" data-min="500" data-max="2000" data-step="75"> billion trees</span>...</td>
+	 		<td>...we need <b data-var="treespaceamount"> million square kilometers of space.</td>
+	 	</tr>
+	 </table>
+
+	 <p class="contextp">For reference, the land area of the United States is about 9 million square kilometers. If we used 25 million square kilometers of space to plant these trees, we'd need to dedicate an area more than the size of the entirety of the USA and Russia to planting trees! That would be more than the land area taken up by the entire Soviet Union in the 1970s!</p>
+
+	 <p class="contextp">Now, recently a lot of new technology has been invented that provide man-made ways of carbon capture. So, these should be easier to get our hands on since we can make them ourselves. The question is, are these methods more efficient than trees? <br><br>The first of these methods involves using liquid solvents and solid adsorbents (sort of like sponges, we'll call them "sorbents" for short). These two substances capture carbon and can release it with steam. Since I didn't talk about these in my previous blog, let's go over them a bit: <br><br>(talk about efficiency of sorbent source looked up in singapore) <br><br>Here is the analysis we have for sorbents based on this data:</p>
+
+	 <table class="analysesTable" id="sorbentAnalysis1">
+	 	<tr class="analysis" id="an4">
+	 		<td>Some sorbent in a certain quantity (include dimensions and type of solid sorbent) absorbs x amount of carbon per year.</td>
+	 		<td>So, to absorb (adj val here) gigatons of carbon annually...</td>
+	 		<td>...we need to be using (adj'd val here) of these.</td>
+	 	</tr>
+	 </table>
+
+	 <p class="contextp">Here is a similar analysis for amine liquid solvents, however there are 4 rows, one for each of the liquid solvent types we're studying:</p>
+
+	 <table class="analysesTable" id="solventAnalysis1">
+	 	<tr class="analysis" id="an5_1">
+	 		<td>A molecule of carbon dioxide has a weight of around 44 atomic mass units.</td>
+	 		<td>So, to absorb <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1" data-max="20" data-step="1"> billion US tons of carbon</span> annually...</td>
+	 	</tr>
+	 	<tr class="analysis" id="an5_2">
+	 		<td>...using MEA, which has a molecular weight of 33 atomic mass units...</td>
+	 		<td>...we'd need <b data-var="solventNeeded_mea"> billion US tons of MEA</b>.</td>
+	 	</tr>
+	 	<tr class="analysis" id="an5_3">
+	 		<td>...using MDEA, which has a molecular weight of 48 atomic mass units...</td>
+	 		<td>...we'd need <b data-var="solventNeeded_mdea"> billion US tons of MDEA</b>.</td>
+	 	</tr>
+	 	<tr class="analysis" id="an5_4">
+	 		<td>...using DEA or DGA, which have molecular weights of 49 atomic mass units...</td>
+	 		<td>...we'd need <b data-var="solventNeeded_dea_dga"> billion US tons of DEA or DGA</b>.</td>
+	 	</tr>
+	 </table>
+
+	 <p class="contextp">Take these numbers with a grain of salt. They only work in aqueous solutions, which means that they have to be mixed with water in order to work. Also, in those aqueous solutions, it's easily possible for carbon to miss the amine entirely while passing through a tank of amine. So, the amounts of various amines given here will not be as effective as they actually should be. Also, I didn't include Non-aqueous AMP because one molecule of it is already quite heavy (62 amu), but also you need two molecules of it to bind to one molecule of carbon dioxide and capture it. So, you will actually need just as much non-aqueous AMP as you would need another aqueous amine with water. <br><br> contextp here; will work on it later</p>
+
+	 <table class="analysesTable" id="climeworksAnalysis1">
+	 	<tr class="analysis" id="an6">
+	 		<td>Climeworks' Orca facility in Iceland absorbs 4,000 metric tons of <u><b>carbon dioxide</b></u>.</td>
+	 		<td>So, to absorb <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1" data-max="20" data-step="1"> billion US tons</span> of <u><b>carbon</b></u> annually...</td>
+	 		<td>...we need to build <b data-var="climeDacsBuilt"> million Orcas</b>.</td>
+	 	</tr>
+	 	<tr>
+	 </table>
+
+	 <p class="contextp">Here is the same analysis for Carbon Engineering's planned facility in Texas:</p>
+
+	 <table class="analysesTable" id="ceAnalysis1">
+	 	<tr class="analysis" id="an7">
+	 		<td>Carbon Engineering's planned facility in Texas would absorb 1 million US tons of <u><b>carbon dioxide</b></u> annually.</td>
+	 		<td>So, to absorb <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1" data-max="20" data-step="1"> billion US tons</span> of <u><b>carbon</b></u> annually...</td>
+	 		<td>...we need to build <b data-var="ceDacsBuilt"> thousand Carbon Engineering DAC facilites</b> like the one being built in Texas.</td>
+	 	</tr>
+	 </table>
+
+	 <p class="contextp">"Carbon dioxide" and "carbon" are bolded and underlined in the previous analysis because they are different. Carbon is an element found in the molecule carbon dioxide. In a carbon dioxide molecule, carbon makes up around 27% of the mass of a carbon dioxide molecule, so this alters the calculation done in the analysis quite a bit. Another thing to note is that the number for how much carbon dioxide Orca absorbs annually is in metric tons, whereas we've usually been using US tons and our final result from the calculation in the analysis is in US tons. By the way, we do use US tons like usual for Carbon Engineering's facility analysis. <br><br>contextp here; will work on it later <br><br>The range of the density value goes from 1.8 to 3.6 grams/cubic centimeter because the density of amorphous carbon is 1.9 g/cm<sup>3</sup> and the density of diamond (which is the densest allotrope of carbon) is 3.52 g/cm<sup>3</sup>.</p>
+
+	 <table class="analysesTable" id="volumeAnalysis1">
+	 	<tr class="analysis" id="an8">
+	 		<td>Suppose the density of the packed carbon after it's been captured is (adj val here) g/cm<sup>3</sup>.</td>
+	 		<td>If we have to absorb (adj val here) gigatons of carbon annually...</td>
+	 		<td>...that's (adj'd val here) times the volume of the Empire State Building. (maybe add another adjustable value where you can click on "Empire State Building" to change it to smth else, e.g lake baikal, an airbus a380)</td>
+	 	</tr>
+	 </table>
+
+</body>
+</html>
