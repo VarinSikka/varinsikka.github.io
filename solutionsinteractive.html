@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Varin Sikka</title>
-	<meta charset="utf-8"/>
 
-	<!-- Tangle -->
-	<script type="text/javascript" src="js/Tangle.js"></script>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Varin Sikka</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- TangleKit -->
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/TangleKit.css" type="text/css">
+
+    <!-- script
+    ================================================== -->
+    	<!-- Tangle -->
+
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+	<script type="text/javascript" src="js/Tangle.js"></script>
 	<script type="text/javascript" src="js/mootools.js"></script>
 	<script type="text/javascript" src="js/sprintf.js"></script>
 	<script type="text/javascript" src="js/BVTouchable.js"></script>
 	<script type="text/javascript" src="js/TangleKit.js"></script>
 
-    <script type="text/javascript">
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+	
+	<!-- script -->
+	    <script type="text/javascript">
 
     	function setUpTangle () {
 
@@ -91,9 +116,80 @@
     	.datimgs {
     	}
     </style>
+
 </head>
 
-<body onload="setUpTangle();">
+<body id="top" class="ss-single" onload="setUpTangle();">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="index.html" title="">Varin's Blog</a>
+                </h1>
+                <p class="s-header__tagline">varinsikka.github.io</p>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="current"><a href="#0">Blog</a>
+                </ul> <!-- end #nav -->
+
+           </div> 
+
+        </nav> <!-- end #nav-wrap -->
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+                <article class="entry">
+
+                    <header class="entry__header">
+
+                        <h2 class="entry__title h1">
+                            <a href="treeco2.html" title="">Mitigating Climate Change: <br> How Many Trees?</a>
+                        </h2>
+
+                        <div class="entry__meta">
+                            <ul>
+                                <li>November 4, 2021</li>
+                                <li><a href="#" title="" rel="category tag">Climate Change</a></li>
+                            </ul>
+                        </div>
+                     
+                    </header> <!-- entry__header -->
 
 	 <h1>Mitigating Climate Change: A Hands-On Analysis</h1>
 
@@ -181,5 +277,283 @@
 	 	</tr>
 	 </table>
 
+            <div class="entry__content">
+                        <p class="lead">
+                        How do we remove excess carbon from the atmosphere?  This question is at the heart of the climate change crisis we face.  
+			Currently at COP26 in Glasgow, world leaders are debating and discussing many different aspects of climate change, like 
+			lowering GHG emissions from factories, landfills, cars, planes, our homes and offices, reducing our meat consumption, 
+			going to plant based foods, from dealing with cows belching methane to removing plastic from the oceans, from lowering
+			our oil addiction to producing better energy, and storing it and many others.  All of this is great, and if we can 
+			mobilize action on these fronts, super.  But, if we want to make substantial progress, I think the main question to 
+			address is: how do we remove excess carbon from our atmosphere?  In this series of blogs I want to address this question,
+			from my point of view as a 14 year old.
+                        </p>
+			    
+			<div class="entry__content-media">
+                        	<img src="images/wheel-500.jpg" 
+                             	srcset="images/wheel-1000.jpg 1000w, 
+                                     	images/wheel-500.jpg 500w" 
+                             	sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    	</div>
+			    
+			<p>
+			There is a lot of talk, and also some action, around using trees to remove carbon. Last year, in my final year of middle 
+			school, I did some experiments to understand the size and scale of this, inspired by Fermi Estimates 
+			(<a href="https://en.wikipedia.org/wiki/Fermi_problem">https://en.wikipedia.org/wiki/Fermi_problem</a>). 
+			Here is what I found:
+			</p>
+			    
+			
+			<p>
+			According to NASA (<a href="https://climate.nasa.gov/news/3020/how-much-carbon-dioxide-are-we-emitting/">Source</a>),  
+		in 2014 we released ~35 billion metric tons (or roughly 38.5 Billion US tons, or Gigatons, which is what I will use here) 
+		of Carbon Dioxide from fossil fuels into the atmosphere.  In 2019, before Covid, this number went up to about 43 billion tons
+		(<a href="https://www.theworldcounts.com/challenges/climate-change/global-warming/global-co2-emissions/story">Source</a>).
+		According to experts (<a href="https://www.quora.com/How-much-carbon-is-in-the-world-s-atmosphere-in-terms-of-gigatonnes-How-does-this-relate-to-tonnes-of-carbon-dioxide">Source</a>) 
+		there is a total of almost a 100x as much, or ~3,500 Gigatons of CO2 in the atmosphere. Of this ~1,100 gigatons 
+		of CO2 have been added due to human activity since 1880. Note that in a CO2 molecule, about 27% is carbon, so the 3,500 
+		gigatons of CO2 in the atmosphere, means ~950 gigatons of carbon, of which ~300 Gigatons has been added since 1880. 
+		And every year, this nunber goes up by another ~35-40 Gigatons or roughly ~10 Gigatons of Carbon!  There are about 3 
+		trillion trees in the world (<a href="https://www.gotreequotes.com/how-many-trees-in-world/">Source: gotreequotes.com</a>), 
+		and because of deforestation in the Amazon rainforests, Indonesia, and many other parts of the world 
+		(<a href="https://www.worldwildlife.org/stories/11-of-the-world-s-most-threatened-forests">Source: WWF</a>), 
+		this number is decreasing (for example, 90% of forests in Tanzania and Kenya, and two-thirds of the forests in Borneo, 
+		have already been lost). There are many initiatives to plant more trees around the world (<a href="https://www.1t.org/">1t.org</a> 
+		and <a href="https://onetrilliontrees.org/">onetrilliontrees.org</a>). So in order to understand the scale of planting 
+		trees to combat climate change, we need to know: How far can trees go in reducing the excess carbon in our atmosphere? 
+		Is this feasible? And what would it take?
+
+	                </p>
+
+                        <p>
+                        One question people often ask is, since the trees are on the ground, and the CO2 is in the atmosphere, miles 
+		above the trees, does it even make sense to use trees for carbon extraction? Since the air constantly keeps moving, 
+		do the air molecules come down and make it to trees? To answer this question, I did an experiment to see how air molecules 
+		travel within a closed room. It turns out air molecules are constantly moving around, at 300-400 meters per second 
+		(<a href="https://www.education.vic.gov.au/school/teachers/teachingresources/discipline/science/continuum/Pages/particles.aspx">Source: Department of Education, Australia</a>), 
+		or 675 to 900 mph! I tested this by checking how long it takes perfume to travel from one corner of a room to another. 
+		I tried this by having my helper release perfume at the top of one corner of a 25 foot by 15 foot room. I stood on the 
+		other end of the room (about 232 inches away) and could correctly recognize the smell of the perfume 70 seconds later. 
+		So the air moved at ~3.3 inches per second.  In a different room, it traveled 170 inches in 52 seconds, again almost 
+		the same 3.3 inches per second. While this seems slow (and keep in mind that this is without the influence of wind, jet 
+		streams, etc.), most atmospheric CO2 resides in the lower stratosphere, which is ~9.3 miles above sea level. This means 
+		that it would take ~2 days for a molecule of CO2 to travel from the lower stratosphere to the leaves of a tree. This is 
+		assuming that there is no movement in the air that ever influences its movement to the surface, so 2 days is pretty good 
+		by that standard.
+
+                        </p>
+
+                <p>
+                Next, to understand how much carbon a tree can absorb, I measured the 
+		increase in the carbon content in two trees in my backyard over ~12 weeks. These 
+		are a type of cherry tree called drooping/weeping cherry. Their average current 
+		weight is ~25 lbs. I measured the weight by the thickness of the trunk (about 1.5 
+		inches) and their height (about 8 feet), and then adding a small percentage of weight 
+		from the leaves, and using the average density of a cherry tree (750 kg / m^3) to 
+		calculate the weight. 25lbs seems about right for my trees. As the trees get older, a 
+		lot more carbon will come into the branches and of course the trunk will keep getting 
+		bigger. I took three measurements, every 4 weeks, and the volume of the trees grew by 
+		about 10% over the 12 weeks. My estimate is these trees added about 5 lbs of weight, of 
+		which about 2.5lbs was the weight of carbon, because a tree is about 50% carbon
+		(<a href="https://www.unm.edu/~jbrink/365/Documents/Calculating_tree_carbon.pdf">Source</a>). 
+		So over 12 weeks, they absorbed roughly 2.5lbs of carbon from the air, and over a year 
+		they will absorb roughly 10 lbs of carbon from the air. 
+                </p>
+						
+		<p id="fourthparagraph">
+		According to usda.gov, a mature tree absorbs 48 pounds 
+	of carbon dioxide per year. This equates to ~13 pounds of carbon 
+	per year. I can see how in 10 years my trees will be absorbing that 
+	much carbon too. That carbon extraction rate means that in order to 
+	absorb the extra 10 billion tons of carbon that we emit into the atmosphere 
+	annually, we need to plant around <b>1.6 trillion trees</b>! 
+	This excludes the remaining 300+ gigatons of excess carbon in the 
+	atmosphere that we’ve been emitting into the atmosphere since the 
+	1800s, and to actually get rid of this, we would have to plant several 
+	times more.  There is a great initiative underway called 1 trillion trees 
+	that aims to plant 1 trillion trees by 2030 (<a href="https://onetrilliontrees.org/">Source: onetrilliontrees.org</a>). 
+	Assuming all deforestation stopped happening right now, urban sprawl 
+	and land use for agriculture stopped increasing, and that the amount 
+	of carbon emitted per year stopped increasing, this would require a minimum 
+	of 15 million square kilometers, and 10 years from the time of planting 
+	for the trees to start absorbing 48 pounds of carbon dioxide per year, 
+	which, again, translates to ~13 pounds of carbon per year. Once they are 
+	all at that maturity, they will be able to take out a (relatively) lackluster 
+	~6.5 gigatons of Carbon out of the air every year. So, while these initiatives 
+	to plant this many trees are really needed, they are not enough, especially when you 
+	consider that as our population and our energy usage, grows, the amount 
+	of carbon we emit into the atmosphere each year will increase and the 
+	impact that these 1 trillion trees have will become less significant. 
+
+
+	</p>
+
+		<p id="fifthparagraph">
+		Anyway, planting even 1 trillion trees (let alone 1.6) 
+	is really, really hard. First, it would take years for those 
+	trees to mature, and those trees wouldn’t start absorbing carbon 
+	at the previously mentioned rate of 13 pounds of carbon per year 
+	until the 2030s (assuming we instantly planted those 1.6 trillion 
+	mature trees today). And, it will be hard to find enough space 
+	where these trees can be planted.  So I looked up some data to
+	understand the feasibility of planting a trillion trees.
+
+		</p>
+
+		<p id="sixthparagraph">
+		According to ourworldindata.org (<a href="https://ourworldindata.org/land-use">Source</a>), 
+	~29% of the Earth’s surface (or ~149 million square kilometers) consists of land, and the rest is 
+	all ocean. Approximately 71% of this land is habitable (as in, trees can be planted there). 
+	The rest is either made up of glaciers or barren land (deserts, salt flats, etc). Of the habitable 
+	land, ~1% is used for urban and built-up areas, another ~1% consists of freshwater (rivers, lakes), 
+	~11% consists of shrubland, ~37% consists of forests, and a gargantuan ~50% of all habitable land 
+	goes to agriculture. This is roughly 51 million square kilometers of land used for agriculture! 
+	Of that, ~77% (that is ~40 million square kilometers) is used for livestock (raising cows and other 
+	animals for food), while the remaining ~23% is used for crops. Despite this, meat and dairy products 
+	only provide ~18% of the global calorie supply, and ~37% of the global protein supply. Everything 
+	else comes from plants. 
+
+		</p>
+
+	<!-- Clarify language around cities and shrubland usage -->
+		<p id="seventhparagraph">
+		A general guideline for planting medium-sized trees is to plant them 25-40 feet apart 
+	(<a href="https://www.arborday.org/trees/righttreeandplace/size.cfm">Source: Arbor Day Foundation</a>). 
+	Even if we were to plant our 1.6 trillion trees just 7 feet apart, each mature tree would need 
+	150 square feet of space. So, to plant 1.6 trillion trees, we would need ~22 million square kilometeres of space,
+	a space about as large as the entire north America, including the US, Canada, Mexico and more. Slowing urban sprawl 
+	doesn't help us get more land to plant trees, and replacing shrubland with forest is pointless since shrubs also
+	extract carbon from the atmosphere. This means that the only two sources of additional land for forests are 51 million square 
+	kilometers of agriculture and 28 million square kilometers of habitable barren land. Transforming barren 
+	land is rather simple in principle, because usually simply planting trees in barren areas will make the 
+	areas not barren (provided they get enough care, fertilizers, water, etc). If we could lower our meat 
+	consumption through lifestyle changes and also by adopting new types of food, we can also remove the immense amount 
+	of land used for livestock production and replace it with forested land. 
+	</p>
+
+		<p id="eighthparagraph">
+		How would we plant this many trees? If every human on the planet took it upon 
+	themselves to plant trees, a trillion trees would mean each one of us needs to plant 
+	~140 trees. 1.6 trillion trees means each of us needs to plant ~210 trees. If we did a 
+	tree per month, this will take more than 17 years. Perhaps in more developed countries 
+	we can do more, and we definitely should. Clearly this will be a mammoth task that will 
+	have to be institutionalized somehow, and (multiple) organizations will need to be incentivized 
+	to plant and maintain trees.  Every country should sign on to a certain number 
+	of trees, and they should all agree on incentives for people to do so, on providing seeds, 
+	best practices, etc. In India, the place where my parents grew up, the “Green Revolution” 
+	was achieved basically within 20 years. Do we have the collective will to get something similar 
+	done to save our planet?
+
+	</p>
+
+		<p id="ninthparagraph">
+	While I think that planting trees is a good idea, and beyond the climate benefits, trees 
+	improve the aesthetics and biodiversity around us, I think that when it comes to the central question we are 
+	contemplating here, trees alone will not get us there. We need new, technological 
+	solutions to extract carbon from the air (for example, 
+	<a href="https://e360.yale.edu/features/the-dream-of-co2-air-capture-edges-toward-reality">DAC facilities</a>) 
+	that are more efficient, cheaper and faster than planting trees. I look forward to 
+	sharing more thoughts on that in my next blog.
+
+	</p>
+
+		<p id="tenthparagraph">
+		So the conclusion here is: Yes, we need to plant more trees, a lot of trees. 
+	We need roughly 2 trillion more trees to make a real dent, so let’s start now. 
+	And beyond planting trees, we need to do more, a lot more. We have one Earth, 
+	and one fleeting chance to rescue it. Very soon it may be too late. So let’s do it, now. 
+	Leaders of the world, this 14 year old joins millions of others to request you to 
+	please come up with concrete goals and timelines, and execute. Talk alone gets nothing done, the action that comes from it 
+	does. And there is already too much hot air around us.
+	</p>
+
+                    </div> <!-- entry__content -->
+
+                    
+
+                    
+
+                </article> <!-- end entry -->
+
+
+            </div> <!-- end main -->
+
+
+            <div id="sidebar" class="s-content__sidebar large-4 column">
+
+
+               <div class="widget widget--categories">
+                   <h3 class="h6">Categories.</h3> 
+                   <ul>
+                        <li><a href="#0" title="">Music</a> (None so far...)</li>
+                        <li><a href="#0" title="">Games</a> (None so far...)</li>
+                        <li><a href="#0" title="">Climate Change</a> (1)</li>
+                        
+                    </ul>
+                </div>
+
+                
+
+                <div class="widget widget_tags">
+                    <h3 class="h6">Post Tags.</h3>
+
+                    <div class="tagcloud group">
+                        <a href="#0">CO2</a>
+                        <a href="#0">NASA</a>
+                        <a href="#0">Pollution</a>
+                        <a href="#0">Trees</a>
+                        <a href="#0">Carbon</a>
+                        <a href="#0">Jet Stream</a>
+                        <a href="#0">Atmosphere</a>
+                    </div>
+                </div>
+
+                
+               
+            </div> <!-- end sidebar -->
+
+        </div> <!-- end row -->
+
+    </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About This Blog</h3>
+
+                <p>This blog is my sometimes random, sometimes deliberate, thoughts 
+on music, games and climate change.</p>
+            </div>
+
+            
+
+            <div class="ss-copyright">
+                <span>© Copyright Varin Sikka 2021</span> 
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+   </footer> <!-- end Footer-->
+
+
+   <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
