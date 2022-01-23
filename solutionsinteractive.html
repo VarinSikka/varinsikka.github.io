@@ -74,9 +74,9 @@
 					this.carbonintake = 10;
 				},
 				update: function() {
-					this.solventNeeded_mea = Math.round(this.carbonintake*(61.084/44.01));
-					this.solventNeeded_mdea = Math.round(this.carbonintake*(119.164/44.01));
-					this.solventNeeded_dea_dga = Math.round(this.carbonintake*(105.137/44.01));
+					this.solventNeeded_mea = Math.round((this.carbonintake*(11/3))*(61.084/44.01));
+					this.solventNeeded_mdea = Math.round((this.carbonintake*(11/3))*(119.164/44.01));
+					this.solventNeeded_dea_dga = Math.round((this.carbonintake*(11/3))*(105.137/44.01));
 				}
 			})
 
@@ -201,7 +201,7 @@
 
 	 <p class="contextp">For reference, the land area of the United States is about 9 million square kilometers. If we used 25 million square kilometers of space to plant these trees, we'd need to dedicate an area more than the size of the entirety of the USA and Russia to planting trees! That would be more than the land area taken up by the entire Soviet Union in the 1970s!</p>
 
-	 <p class="contextp">Now, recently a lot of new technology has been invented that provide man-made ways of carbon capture. So, these should be easier to get our hands on since we can make them ourselves. The question is, are these methods more efficient than trees? <br><br> The first of these methods are called liquid solvents, and are a class of molecule called amine. Amines are built from the chemical compound ammonia, whose formula is NH<sub>3</sub>. There are 4 main types of amines we will be discussing: monoethanolamine(<br><br> Here is the analysis we have for solvents based on this data:</p>
+	 <p class="contextp">Now, recently a lot of new technology has been invented that provide man-made ways of carbon capture. So, these should be easier to get our hands on since we can make them ourselves. The question is, are these methods more efficient than trees? <br><br> The first of these methods are called liquid solvents, and are a class of molecule called amine. Amines are built from the chemical compound ammonia, whose formula is NH<sub>3</sub>. There are 4 main types of amines we will be discussing: monoethanolamine (C<sub>2</sub>H<sub>7</sub>NO, aka MEA), methyl diethanolamine (C<sub>5</sub>H<sub>13</sub>NO<sub>2</sub>, aka MDEA), diethanolamine (C<sub>4</sub>H<sub>11</sub>NO<sub>2</sub>, aka DEA), and diglycolamine (same formula as DEA, aka DGA). The only difference between DGA and DEA is how the atoms in each molecule of them are arranged. Now, it takes one molecule of each of these amines to capture one molecule of carbon dioxide (whose formula is CO<sub>2</sub>). So, we can get the atomic weight of each molecule of these amines and compare it to the atomic weight of each molecule of carbon dioxide. <br><br> Here is the analysis we have for solvents based on this info:</p>
 
 	 <table class="analysesTable" id="solventAnalysis1">
 	 	<tr class="analysis" id="an5_1">
@@ -209,20 +209,20 @@
 	 		<td>So, to absorb <span class="TKAdjustableNumber" data-var="carbonintake" data-min="1" data-max="20" data-step="1"> billion US tons of carbon</span> annually...</td>
 	 	</tr>
 	 	<tr class="analysis" id="an5_2">
-	 		<td>...using MEA, which has a molecular weight of 33 atomic mass units...</td>
+	 		<td>...using MEA, which has a molecular weight of ~61 atomic mass units...</td>
 	 		<td>...we'd need <b data-var="solventNeeded_mea"> billion US tons of MEA</b>.</td>
 	 	</tr>
 	 	<tr class="analysis" id="an5_3">
-	 		<td>...using MDEA, which has a molecular weight of 48 atomic mass units...</td>
+	 		<td>...using MDEA, which has a molecular weight of ~119 atomic mass units...</td>
 	 		<td>...we'd need <b data-var="solventNeeded_mdea"> billion US tons of MDEA</b>.</td>
 	 	</tr>
 	 	<tr class="analysis" id="an5_4">
-	 		<td>...using DEA or DGA, which have molecular weights of 49 atomic mass units...</td>
+	 		<td>...using DEA or DGA, which have molecular weights of ~105 atomic mass units...</td>
 	 		<td>...we'd need <b data-var="solventNeeded_dea_dga"> billion US tons of DEA or DGA</b>.</td>
 	 	</tr>
 	 </table>
 
-	 <p class="contextp">Take these numbers with a grain of salt. They only work in aqueous solutions, which means that they have to be mixed with water in order to work. Also, in those aqueous solutions, it's easily possible for carbon to miss the amine entirely while passing through a tank of amine. So, the amounts of various amines given here will not be as effective as they actually should be. Also, I didn't include Non-aqueous AMP because one molecule of it is already quite heavy (62 amu), but also you need two molecules of it to bind to one molecule of carbon dioxide and capture it. So, you will actually need just as much non-aqueous AMP as you would need another aqueous amine with water. <br><br> contextp here; will work on it later</p>
+	 <p class="contextp">"Carbon" is bolded and underlined in the previous analysis because it is different from "carbon dioxide," which I mentioned in the previous paragraph. Carbon is an element found in the molecule carbon dioxide. In a carbon dioxide molecule, carbon makes up around 27% of the mass of a carbon dioxide molecule. This is important because one molecule of each of these amines binds to one molecule of <b><u>carbon dioxide</u></b>, and the unit our slider measures our yearly emissions in is tons of <b><u>carbon</u></b>, so this alters the calculation a bit. <br><br> Also, take these numbers with a grain of salt. They only work in aqueous solutions, which means that they have to be mixed with water in order to work. Also, in those aqueous solutions, it's easily possible for carbon to miss the amine entirely while passing through a tank of amine. So, the amounts of various amines given here will not be as effective as they actually should be. <br><br> contextp here; will work on it later</p>
 
 	 <table class="analysesTable" id="climeworksAnalysis1">
 	 	<tr class="analysis" id="an6">
@@ -243,7 +243,7 @@
 	 	</tr>
 	 </table>
 
-	 <p class="contextp">"Carbon dioxide" and "carbon" are bolded and underlined in the previous analysis because they are different. Carbon is an element found in the molecule carbon dioxide. In a carbon dioxide molecule, carbon makes up around 27% of the mass of a carbon dioxide molecule, so this alters the calculation done in the analysis quite a bit. Another thing to note is that the number for how much carbon dioxide Orca absorbs annually is in metric tons, whereas we've usually been using US tons and our final result from the calculation in the analysis is in US tons. By the way, we do use US tons like usual for Carbon Engineering's facility analysis. <br><br>contextp here; will work on it later <br><br>The range of the density value goes from 1.8 to 3.6 grams/cubic centimeter because the density of amorphous carbon is 1.9 g/cm<sup>3</sup> and the density of diamond (which is the densest allotrope of carbon) is 3.52 g/cm<sup>3</sup>.</p>
+	 <p class="contextp">Again, carbon and carbon dioxide are bolded to highlight the same thing I mentioned after the solvent analysis. Another thing to note is that the number for how much carbon dioxide Orca absorbs annually is in metric tons, whereas we've usually been using US tons and our final result from the calculation in the analysis is in US tons. By the way, we do use US tons like usual for Carbon Engineering's facility analysis. <br><br>contextp here; will work on it later <br><br>The range of the density value goes from 1.8 to 3.6 grams/cubic centimeter because the density of amorphous carbon is 1.9 g/cm<sup>3</sup> and the density of diamond (which is the densest allotrope of carbon) is 3.52 g/cm<sup>3</sup>.</p>
 
 	 <table class="analysesTable" id="volumeAnalysis1">
 	 	<tr class="analysis" id="an8">
