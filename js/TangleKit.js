@@ -175,6 +175,7 @@ Tangle.classes.TKAdjustableNumber = {
         else { this.element.removeClass("TKAdjustableNumberHover"); }
     },
 
+
     updateCursor: function () {
         var body = document.getElement("body");
         if (this.isActive()) { body.addClass("TKCursorDragHorizontal"); }
