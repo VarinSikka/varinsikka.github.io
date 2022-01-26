@@ -233,8 +233,8 @@ Tangle.classes.TKAdjustableNumber = {
     // slider
     
     updateSlider: function () {
-	var sliderStyle = "position:absolute; display:none; width:134px; height:8px; margin-top:-26px; background-image:url('Images/SliderBackground.png');";
-	var fillStyle   = "position:absolute; width:134px; height:8px; background-image:url('Images/SliderFill.png');";
+	var sliderStyle = "position:absolute; display:none; width:134px; height:8px; margin-top:-26px; background-image:url('images/SliderBackground.png');";
+	var fillStyle   = "position:absolute; width:134px; height:8px; background-image:url('images/SliderFill.png');";
 	var slider = (new Element("div", { "class": "adjustableSlider", "style": sliderStyle })).inject(el, "top");
 	var fill   = (new Element("div", { "style": fillStyle })).inject(slider);
 	slider.setStyle("display", (isDragging || isHovering) ? "block" : "none");
