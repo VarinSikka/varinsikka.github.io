@@ -189,7 +189,7 @@ Tangle.classes.TKAdjustableNumber = {
         this.helpElement = (new Element("div", { "class": "TKAdjustableNumberHelp" })).inject(this.element, "top");
         this.helpElement.setStyle("display", "none");
 	this.helpElement.setStyle("font-size", "14px");
-        this.helpElement.set("text", "drag<br>< >");
+        this.helpElement.set("text", "drag < >");
     },
     
     updateHelp: function () {
