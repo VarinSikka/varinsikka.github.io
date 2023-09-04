@@ -92,7 +92,7 @@
                     <header class="entry__header">
 
                         <h2 class="entry__title h1">
-                            <a href="llmtranslation.html" title="">Why machine translation using LLMs isn't possible (yet)</a>
+                            <a href="llmtranslation.html" title="">Why we're a long way from accurate machine translation</a>
                         </h2>
 
                         <div class="entry__meta">
@@ -118,14 +118,14 @@
                         </p>
 
                         <p>
-                        After the text is encoded into these tokens, it's then decoded into the corresponding text of the target language. This is usually more complicated than it sounds; first 
-                        you have to find the corresponding word for each token, then sometimes you have to "glue" the new tokens together to form words as needed, and then you have to rearrange the 
-                        new words as appropriate for the new language.
+                        After the text is encoded into these tokens, it's then decoded into the corresponding text of the target language. This is usually more complicated than it sounds; the neural 
+                        network needs to determine both what the words in the target language should be and then how they should be glued together. It needs to do this while trying to keep the meaning 
+                        the same with only the input it was given.
                         </p>
 
                         <p>
-                        While the approach sounds pretty elegant, it makes a pretty critical assumption that makes it useless for languages that don't conform to this assumption: it assumes that 
-                        all languages use the exact same set of morphemes. It's a fairly easy assumption to make, so we'll go into some languages that dont conform to it now.
+                        While the approach sounds pretty elegant, it makes a pretty critical assumption that doesn't make it practical for languages that don't conform to this assumption: it assumes that 
+                        all languages use the exact same set of morphemes. It's a fairly easy assumption to make, so we'll go into some languages that don't conform to it now.
                         </p>
 
                         <p>
@@ -148,9 +148,10 @@
                         being interacted with; so "give" in "I give them hay" would be "níłjool", but "give" in "I give them a cigarette" would be "nítįįh". On top of all that, when tokens are glued together 
                         in the language, they may surface in a slightly different form that makes the presence of that token less clear; for example, "di'nisbąąs" can be tokenized into "di-'a-ni-sh-ł-bąąs".
                         First off, all of this makes acquiring certain tokens that have to be used in Navajo from an English text really hard, since English has no real equivalent of such grammatical 
-                        features, and even if it does it probably doesn't need to be used like it does in Navajo; for example, the verb in "I am giving them water" could have the momentaneous, continuative, durative, 
+                        features, and even if it does it probably doesn't need to be used like it does in Navajo; for example, the verb in "I am giving them water" could have the momentaneous, continuative, 
                         semelfactive, conative, or cursive aspects, and since none of these aspect distinctions are made in English, without further context the LLM can't accurately determine which one to use; 
-                        the same applies for knowing the shape of an object in questions. And second, in the language
+                        the same applies for knowing the shape of an object in questions. And second, extracting tokens out of Navajo words for translation into other languages becomes harder if they surface 
+                        in different ways depending on how they're combined in words (e.g. the tokens "-sh-ł-" surfacing as "s" in the previous example of "di'nisbąąs").
                         </p>
 
                         <p>
