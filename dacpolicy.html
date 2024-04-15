@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Varin Sikka</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top" class="ss-single">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="index.html" title="">Varin's Blog</a>
+                </h1>
+                <p class="s-header__tagline">varinsikka.github.io</p>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="current"><a href="#0">Blog</a>
+                </ul> <!-- end #nav -->
+
+           </div> 
+
+        </nav> <!-- end #nav-wrap -->
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+                <article class="entry">
+
+                    <header class="entry__header">
+
+                        <h2 class="entry__title h1">
+                            <a href="llmtranslation.html" title="">Why we're a long way from accurate machine translation</a>
+                        </h2>
+
+                        <div class="entry__meta">
+                            <ul>
+                                <li>August 21, 2023</li>
+                                <li><a href="#" title="" rel="category tag">Artificial Intelligence</a></li>
+                            </ul>
+                        </div>
+                     
+                    </header> <!-- entry__header -->
+
+                    <div class="entry__content">
+                      
+                        <p>
+                        I read a paper recently that <a href="https://arxiv.org/pdf/2304.04675.pdf">evaluated the performance</a> of various LLMs in translating various languages. The results seem 
+                        pretty interesting (overall), and then this got me into a rabbit hole of trying to understand exactly how LLms do machine translation.
+                        </p>
+
+                        <p>
+                        Basically, inputs (the text you want to translate) are first "encoded" into tokens. Tokens are basically the smallest divisible parts of speech possible (if you're a 
+                        linguistics nerd, these are basically just morphemes). Words are generally one token, such as "eat", "drink", "person", "tree", "food", but can also be more than one (like in 
+                        "eat-ing", "tree-s", "push-ed", "anti-dis-establish-ment-arian-ism" with tokens separated by hyphens).
+                        </p>
+
+                        <p>
+                        After the text is encoded into these tokens, it's then decoded into the corresponding text of the target language. This is usually more complicated than it sounds; the neural 
+                        network needs to determine both what the words in the target language should be and then how they should be glued together. It needs to do this while trying to keep the meaning 
+                        the same with only the input it was given.
+                        </p>
+
+                        <p>
+                        While the approach sounds pretty elegant, it makes a pretty critical assumption that doesn't make it practical for languages that don't conform to this assumption: it assumes that 
+                        all languages use the exact same set of morphemes. It's a fairly easy assumption to make, so we'll go into some languages that don't conform to it now.
+                        </p>
+
+                        <p>
+                        Starting with two simple examples: Russian and Vietnamese. You've probably seen a lot of talk on how perceptions of color can vary languages, and both of these languages are 
+                        examples of this. In English, basic words for colors can include red, orange, yellow, green, blue, purple, black, white, brown, pink, etc. Vietnamese, however, doesn't 
+                        distinguish between "blue" and "green"; they're both considered "xanh". This isn't a problem if you're translating from English to Vietnamese, since whether you're describing 
+                        something as "blue" or "green", you can translate it to "xanh" either way. This is a problem vice versa, however. Let's say you're translating "bàn đó xanh" ("that table is 
+                        blue/green", also if this translation is wrong it was Google Translate's fault i swear) into English, and the table in question is actually blue. On its own, an LLM has no way 
+                        of knowing that the table is green; it can't just look at the table itself and know what color it is. This makes accurately translating this simple, merely 3-word phrase entirely 
+                        impossible without connecting it to some computer vision system that can identify the "table" mentioned and see what color it is. <br> Russian is a similar situation, it has a 
+                        word for lighter shades of blue ("goluboy") and another for darker ones ("siniy"). If you're translating "that pen is blue" into Russian, the LLM translating it doesn't know 
+                        if your pen is a lighter shade of blue or a darker one, and now we're in the same situation as Vietnamese.
+                        </p>
+
+                        <p>
+                        Now to Arizona for a more extreme example: Navajo. Navajo is (generally speaking) an agglutinative language, which basically means it really likes to "glue" together those 
+                        tokens/morphemes mentioned earlier into words rather than leave them separate as in English. Navajo also has a B-52 Stratofortress's max cargo capacity worth of grammatical 
+                        constructs that are not marked at all in English; such as the independent "durative", "conclusive", "semelfactive", "distributive", "reversative", and "cursive" (+more) verb aspects, none 
+                        of which (to my knowledge) have any way of being marked with their own tokens in English. In addition, Navajo verb tokens get different forms depending on the shape of the object 
+                        being interacted with; so "give" in "I give them hay" would be "níłjool", but "give" in "I give them a cigarette" would be "nítįįh". On top of all that, when tokens are glued together 
+                        in the language, they may surface in a slightly different form that makes the presence of that token less clear; for example, "di'nisbąąs" can be tokenized into "di-'a-ni-sh-ł-bąąs".
+                        First off, all of this makes acquiring certain tokens that have to be used in Navajo from an English text really hard, since English has no real equivalent of such grammatical 
+                        features, and even if it does it probably doesn't need to be used like it does in Navajo; for example, the verb in "I am giving them water" could have the momentaneous, continuative, 
+                        semelfactive, conative, or cursive aspects, and since none of these aspect distinctions are made in English, without further context the LLM can't accurately determine which one to use; 
+                        the same applies for knowing the shape of an object in questions. And second, extracting tokens out of Navajo words for translation into other languages becomes harder if they surface 
+                        in different ways depending on how they're combined in words (e.g. the tokens "-sh-ł-" surfacing as "s" in the previous example of "di'nisbąąs").
+                        </p>
+
+                        <p>
+                        There are probably a lot more examples of issues like this that occur for translating languages around the world using LLMs and tokenization; one of the biggest ones revolves around color perception, 
+                        like in the first example mentioned, but some languages have no numbers, some languages have no relative directions (left/right, up/down, (for/back)ward), some languages have a distinction between third-
+                        person obviative and third-person animate subjects (in other words, people in the third-person who are further away from a conversation get different pronouns than people who are closer to it), and more. 
+                        Basically, given just how context-based languages can be, without some way to provide LLM machine translators with context of a phrase before translating the phrase, this isn't going to be feasible anytime 
+                        soon for a <em>lot</em> of languages.
+                        </p>
+
+                    </div> <!-- entry__content -->
+
+                </article> <!-- end entry -->
+
+
+            </div> <!-- end main -->
+
+
+            <div id="sidebar" class="s-content__sidebar large-4 column">
+
+
+               <div class="widget widget--categories">
+                   <h3 class="h6">Categories.</h3> 
+                   <ul>
+                        <li><a href="#0" title="">Music</a> (None so far...)</li>
+                        <li><a href="#0" title="">Games</a> (None so far...)</li>
+                        <li><a href="#0" title="">Climate Change</a> (2)</li>
+                        
+                    </ul>
+                </div>
+
+                
+
+                <div class="widget widget_tags">
+                    <h3 class="h6">Post Tags.</h3>
+
+                    <div class="tagcloud group">
+                        <a href="#0">CO2</a>
+                        <a href="#0">NASA</a>
+                        <a href="#0">Pollution</a>
+                        <a href="#0">Trees</a>
+                        <a href="#0">Carbon</a>
+                        <a href="#0">Jet Stream</a>
+                        <a href="#0">Atmosphere</a>
+                    </div>
+                </div>
+
+                
+               
+            </div> <!-- end sidebar -->
+
+        </div> <!-- end row -->
+
+    </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About This Blog</h3>
+
+                <p>This blog is my sometimes random, sometimes deliberate, thoughts 
+on music, games and climate change.</p>
+            </div>
+
+            
+
+            <div class="ss-copyright">
+                <span>© Copyright Varin Sikka 2021-2023</span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+   </footer> <!-- end Footer-->
+
+
+   <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
