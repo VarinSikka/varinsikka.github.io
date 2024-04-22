@@ -17,11 +17,17 @@
     ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/TangleKit.css" type="text/css">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
+	<script type="text/javascript" src="js/Tangle.js"></script>
+	<script type="text/javascript" src="js/mootools.js"></script>
+	<script type="text/javascript" src="js/sprintf.js"></script>
+	<script type="text/javascript" src="js/BVTouchable.js"></script>
+	<script type="text/javascript" src="js/TangleKit.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -29,10 +35,40 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+	
+	<!-- script -->
+	<script type="text/javascript">
+
+		function setUpTangle () {
+
+			var fourthpara = document.getElementById("fourthparagraph");
+			var seventhpara = document.getElementById("seventhparagraph");
+
+			var fourthparatangle = new Tangle(fourthpara, {
+				initialize: function() {
+					this.carbonintake = 10;
+				},
+				update: function() {
+					this.treeamount = Math.round((this.carbonintake * 20000)/13)/10;
+				}
+			});
+
+			var seventhparatangle = new Tangle(seventhpara, {
+				initialize: function () {
+					this.trees = 1607;
+					this.squarefeetpertree = 150;
+				},
+				update: function () {
+					this.kilometers = Math.round(((this.trees*this.squarefeetpertree)/(1.076*(10**7)))*1000)
+				}
+			});
+		}
+
+	</script>
 
 </head>
 
-<body id="top" class="ss-single">
+<body id="top" class="ss-single" onload="setUpTangle();">
 
     <!-- preloader
     ================================================== -->
@@ -92,77 +128,213 @@
                     <header class="entry__header">
 
                         <h2 class="entry__title h1">
-                            <a href="llmtranslation.html" title="">Why we're a long way from accurate machine translation</a>
+                            <a href="treeco2.html" title="">Mitigating Climate Change: <br> How Many Trees?</a>
                         </h2>
 
                         <div class="entry__meta">
                             <ul>
-                                <li>August 21, 2023</li>
-                                <li><a href="#" title="" rel="category tag">Artificial Intelligence</a></li>
+                                <li>November 4, 2021</li>
+                                <li><a href="#" title="" rel="category tag">Climate Change</a></li>
                             </ul>
                         </div>
                      
                     </header> <!-- entry__header -->
 
                     <div class="entry__content">
-                      
-                        <p>
-                        I read a paper recently that <a href="https://arxiv.org/pdf/2304.04675.pdf">evaluated the performance</a> of various LLMs in translating various languages. The results seem 
-                        pretty interesting (overall), and then this got me into a rabbit hole of trying to understand exactly how LLms do machine translation.
+                        <p class="lead">
+                        How do we remove excess carbon from the atmosphere?  This question is at the heart of the climate change crisis we face.  
+			Currently at COP26 in Glasgow, world leaders are debating and discussing many different aspects of climate change, like 
+			lowering GHG emissions from factories, landfills, cars, planes, our homes and offices, reducing our meat consumption, 
+			going to plant based foods, from dealing with cows belching methane to removing plastic from the oceans, from lowering
+			our oil addiction to producing better energy, and storing it and many others.  All of this is great, and if we can 
+			mobilize action on these fronts, super.  But, if we want to make substantial progress, I think the main question to 
+			address is: how do we remove excess carbon from our atmosphere?  In this series of blogs I want to address this question,
+			from my point of view as a 14 year old.
                         </p>
+			    
+			<div class="entry__content-media">
+                        	<img src="images/wheel-500.jpg" 
+                             	srcset="images/wheel-1000.jpg 1000w, 
+                                     	images/wheel-500.jpg 500w" 
+                             	sizes="(max-width: 1000px) 100vw, 1000px" alt="">
+                    	</div>
+			    
+			<p>
+			There is a lot of talk, and also some action, around using trees to remove carbon. Last year, in my final year of middle 
+			school, I did some experiments to understand the size and scale of this, inspired by Fermi Estimates 
+			(<a href="https://en.wikipedia.org/wiki/Fermi_problem">https://en.wikipedia.org/wiki/Fermi_problem</a>). 
+			Here is what I found:
+			</p>
+			    
+			
+			<p>
+			According to NASA (<a href="https://climate.nasa.gov/news/3020/how-much-carbon-dioxide-are-we-emitting/">Source</a>),  
+		in 2014 we released ~35 billion metric tons (or roughly 38.5 Billion US tons, or Gigatons, which is what I will use here) 
+		of Carbon Dioxide from fossil fuels into the atmosphere.  In 2019, before Covid, this number went up to about 43 billion tons
+		(<a href="https://www.theworldcounts.com/challenges/climate-change/global-warming/global-co2-emissions/story">Source</a>).
+		According to experts (<a href="https://www.quora.com/How-much-carbon-is-in-the-world-s-atmosphere-in-terms-of-gigatonnes-How-does-this-relate-to-tonnes-of-carbon-dioxide">Source</a>) 
+		there is a total of almost a 100x as much, or ~3,500 Gigatons of CO2 in the atmosphere. Of this ~1,100 gigatons 
+		of CO2 have been added due to human activity since 1880. Note that in a CO2 molecule, about 27% is carbon, so the 3,500 
+		gigatons of CO2 in the atmosphere, means ~950 gigatons of carbon, of which ~300 Gigatons has been added since 1880. 
+		And every year, this nunber goes up by another ~35-40 Gigatons or roughly ~10 Gigatons of Carbon!  There are about 3 
+		trillion trees in the world (<a href="https://www.gotreequotes.com/how-many-trees-in-world/">Source: gotreequotes.com</a>), 
+		and because of deforestation in the Amazon rainforests, Indonesia, and many other parts of the world 
+		(<a href="https://www.worldwildlife.org/stories/11-of-the-world-s-most-threatened-forests">Source: WWF</a>), 
+		this number is decreasing (for example, 90% of forests in Tanzania and Kenya, and two-thirds of the forests in Borneo, 
+		have already been lost). There are many initiatives to plant more trees around the world (<a href="https://www.1t.org/">1t.org</a> 
+		and <a href="https://onetrilliontrees.org/">onetrilliontrees.org</a>). So in order to understand the scale of planting 
+		trees to combat climate change, we need to know: How far can trees go in reducing the excess carbon in our atmosphere? 
+		Is this feasible? And what would it take?
+
+	                </p>
 
                         <p>
-                        Basically, inputs (the text you want to translate) are first "encoded" into tokens. Tokens are basically the smallest divisible parts of speech possible (if you're a 
-                        linguistics nerd, these are basically just morphemes). Words are generally one token, such as "eat", "drink", "person", "tree", "food", but can also be more than one (like in 
-                        "eat-ing", "tree-s", "push-ed", "anti-dis-establish-ment-arian-ism" with tokens separated by hyphens).
+                        One question people often ask is, since the trees are on the ground, and the CO2 is in the atmosphere, miles 
+		above the trees, does it even make sense to use trees for carbon extraction? Since the air constantly keeps moving, 
+		do the air molecules come down and make it to trees? To answer this question, I did an experiment to see how air molecules 
+		travel within a closed room. It turns out air molecules are constantly moving around, at 300-400 meters per second 
+		(<a href="https://www.education.vic.gov.au/school/teachers/teachingresources/discipline/science/continuum/Pages/particles.aspx">Source: Department of Education, Australia</a>), 
+		or 675 to 900 mph! I tested this by checking how long it takes perfume to travel from one corner of a room to another. 
+		I tried this by having my helper release perfume at the top of one corner of a 25 foot by 15 foot room. I stood on the 
+		other end of the room (about 232 inches away) and could correctly recognize the smell of the perfume 70 seconds later. 
+		So the air moved at ~3.3 inches per second.  In a different room, it traveled 170 inches in 52 seconds, again almost 
+		the same 3.3 inches per second. While this seems slow (and keep in mind that this is without the influence of wind, jet 
+		streams, etc.), most atmospheric CO2 resides in the lower stratosphere, which is ~9.3 miles above sea level. This means 
+		that it would take ~2 days for a molecule of CO2 to travel from the lower stratosphere to the leaves of a tree. This is 
+		assuming that there is no movement in the air that ever influences its movement to the surface, so 2 days is pretty good 
+		by that standard.
+
                         </p>
 
-                        <p>
-                        After the text is encoded into these tokens, it's then decoded into the corresponding text of the target language. This is usually more complicated than it sounds; the neural 
-                        network needs to determine both what the words in the target language should be and then how they should be glued together. It needs to do this while trying to keep the meaning 
-                        the same with only the input it was given.
-                        </p>
+                <p>
+                Next, to understand how much carbon a tree can absorb, I measured the 
+		increase in the carbon content in two trees in my backyard over ~12 weeks. These 
+		are a type of cherry tree called drooping/weeping cherry. Their average current 
+		weight is ~25 lbs. I measured the weight by the thickness of the trunk (about 1.5 
+		inches) and their height (about 8 feet), and then adding a small percentage of weight 
+		from the leaves, and using the average density of a cherry tree (750 kg / m^3) to 
+		calculate the weight. 25lbs seems about right for my trees. As the trees get older, a 
+		lot more carbon will come into the branches and of course the trunk will keep getting 
+		bigger. I took three measurements, every 4 weeks, and the volume of the trees grew by 
+		about 10% over the 12 weeks. My estimate is these trees added about 5 lbs of weight, of 
+		which about 2.5lbs was the weight of carbon, because a tree is about 50% carbon
+		(<a href="https://www.unm.edu/~jbrink/365/Documents/Calculating_tree_carbon.pdf">Source</a>). 
+		So over 12 weeks, they absorbed roughly 2.5lbs of carbon from the air, and over a year 
+		they will absorb roughly 10 lbs of carbon from the air. 
+                </p>
+						
+		<p id="fourthparagraph">
+		According to usda.gov, a mature tree absorbs 48 pounds 
+	of carbon dioxide per year. This equates to ~13 pounds of carbon 
+	per year. I can see how in 10 years my trees will be absorbing that 
+	much carbon too. That carbon extraction rate means that in order to 
+	absorb the extra 10 billion tons of carbon that we emit into the atmosphere 
+	annually, we need to plant around <b>1.6 trillion trees</b>! 
+	This excludes the remaining 300+ gigatons of excess carbon in the 
+	atmosphere that we’ve been emitting into the atmosphere since the 
+	1800s, and to actually get rid of this, we would have to plant several 
+	times more.  There is a great initiative underway called 1 trillion trees 
+	that aims to plant 1 trillion trees by 2030 (<a href="https://onetrilliontrees.org/">Source: onetrilliontrees.org</a>). 
+	Assuming all deforestation stopped happening right now, urban sprawl 
+	and land use for agriculture stopped increasing, and that the amount 
+	of carbon emitted per year stopped increasing, this would require a minimum 
+	of 15 million square kilometers, and 10 years from the time of planting 
+	for the trees to start absorbing 48 pounds of carbon dioxide per year, 
+	which, again, translates to ~13 pounds of carbon per year. Once they are 
+	all at that maturity, they will be able to take out a (relatively) lackluster 
+	~6.5 gigatons of Carbon out of the air every year. So, while these initiatives 
+	to plant this many trees are really needed, they are not enough, especially when you 
+	consider that as our population and our energy usage, grows, the amount 
+	of carbon we emit into the atmosphere each year will increase and the 
+	impact that these 1 trillion trees have will become less significant. 
 
-                        <p>
-                        While the approach sounds pretty elegant, it makes a pretty critical assumption that doesn't make it practical for languages that don't conform to this assumption: it assumes that 
-                        all languages use the exact same set of morphemes. It's a fairly easy assumption to make, so we'll go into some languages that don't conform to it now.
-                        </p>
 
-                        <p>
-                        Starting with two simple examples: Russian and Vietnamese. You've probably seen a lot of talk on how perceptions of color can vary languages, and both of these languages are 
-                        examples of this. In English, basic words for colors can include red, orange, yellow, green, blue, purple, black, white, brown, pink, etc. Vietnamese, however, doesn't 
-                        distinguish between "blue" and "green"; they're both considered "xanh". This isn't a problem if you're translating from English to Vietnamese, since whether you're describing 
-                        something as "blue" or "green", you can translate it to "xanh" either way. This is a problem vice versa, however. Let's say you're translating "bàn đó xanh" ("that table is 
-                        blue/green", also if this translation is wrong it was Google Translate's fault i swear) into English, and the table in question is actually blue. On its own, an LLM has no way 
-                        of knowing that the table is green; it can't just look at the table itself and know what color it is. This makes accurately translating this simple, merely 3-word phrase entirely 
-                        impossible without connecting it to some computer vision system that can identify the "table" mentioned and see what color it is. <br> Russian is a similar situation, it has a 
-                        word for lighter shades of blue ("goluboy") and another for darker ones ("siniy"). If you're translating "that pen is blue" into Russian, the LLM translating it doesn't know 
-                        if your pen is a lighter shade of blue or a darker one, and now we're in the same situation as Vietnamese.
-                        </p>
+	</p>
 
-                        <p>
-                        Now to Arizona for a more extreme example: Navajo. Navajo is (generally speaking) an agglutinative language, which basically means it really likes to "glue" together those 
-                        tokens/morphemes mentioned earlier into words rather than leave them separate as in English. Navajo also has a B-52 Stratofortress's max cargo capacity worth of grammatical 
-                        constructs that are not marked at all in English; such as the independent "durative", "conclusive", "semelfactive", "distributive", "reversative", and "cursive" (+more) verb aspects, none 
-                        of which (to my knowledge) have any way of being marked with their own tokens in English. In addition, Navajo verb tokens get different forms depending on the shape of the object 
-                        being interacted with; so "give" in "I give them hay" would be "níłjool", but "give" in "I give them a cigarette" would be "nítįįh". On top of all that, when tokens are glued together 
-                        in the language, they may surface in a slightly different form that makes the presence of that token less clear; for example, "di'nisbąąs" can be tokenized into "di-'a-ni-sh-ł-bąąs".
-                        First off, all of this makes acquiring certain tokens that have to be used in Navajo from an English text really hard, since English has no real equivalent of such grammatical 
-                        features, and even if it does it probably doesn't need to be used like it does in Navajo; for example, the verb in "I am giving them water" could have the momentaneous, continuative, 
-                        semelfactive, conative, or cursive aspects, and since none of these aspect distinctions are made in English, without further context the LLM can't accurately determine which one to use; 
-                        the same applies for knowing the shape of an object in questions. And second, extracting tokens out of Navajo words for translation into other languages becomes harder if they surface 
-                        in different ways depending on how they're combined in words (e.g. the tokens "-sh-ł-" surfacing as "s" in the previous example of "di'nisbąąs").
-                        </p>
+		<p id="fifthparagraph">
+		Anyway, planting even 1 trillion trees (let alone 1.6) 
+	is really, really hard. First, it would take years for those 
+	trees to mature, and those trees wouldn’t start absorbing carbon 
+	at the previously mentioned rate of 13 pounds of carbon per year 
+	until the 2030s (assuming we instantly planted those 1.6 trillion 
+	mature trees today). And, it will be hard to find enough space 
+	where these trees can be planted.  So I looked up some data to
+	understand the feasibility of planting a trillion trees.
 
-                        <p>
-                        There are probably a lot more examples of issues like this that occur for translating languages around the world using LLMs and tokenization; one of the biggest ones revolves around color perception, 
-                        like in the first example mentioned, but some languages have no numbers, some languages have no relative directions (left/right, up/down, (for/back)ward), some languages have a distinction between third-
-                        person obviative and third-person animate subjects (in other words, people in the third-person who are further away from a conversation get different pronouns than people who are closer to it), and more. 
-                        Basically, given just how context-based languages can be, without some way to provide LLM machine translators with context of a phrase before translating the phrase, this isn't going to be feasible anytime 
-                        soon for a <em>lot</em> of languages.
-                        </p>
+		</p>
+
+		<p id="sixthparagraph">
+		According to ourworldindata.org (<a href="https://ourworldindata.org/land-use">Source</a>), 
+	~29% of the Earth’s surface (or ~149 million square kilometers) consists of land, and the rest is 
+	all ocean. Approximately 71% of this land is habitable (as in, trees can be planted there). 
+	The rest is either made up of glaciers or barren land (deserts, salt flats, etc). Of the habitable 
+	land, ~1% is used for urban and built-up areas, another ~1% consists of freshwater (rivers, lakes), 
+	~11% consists of shrubland, ~37% consists of forests, and a gargantuan ~50% of all habitable land 
+	goes to agriculture. This is roughly 51 million square kilometers of land used for agriculture! 
+	Of that, ~77% (that is ~40 million square kilometers) is used for livestock (raising cows and other 
+	animals for food), while the remaining ~23% is used for crops. Despite this, meat and dairy products 
+	only provide ~18% of the global calorie supply, and ~37% of the global protein supply. Everything 
+	else comes from plants. 
+
+		</p>
+
+	<!-- Clarify language around cities and shrubland usage -->
+		<p id="seventhparagraph">
+		A general guideline for planting medium-sized trees is to plant them 25-40 feet apart 
+	(<a href="https://www.arborday.org/trees/righttreeandplace/size.cfm">Source: Arbor Day Foundation</a>). 
+	Even if we were to plant our 1.6 trillion trees just 7 feet apart, each mature tree would need 
+	150 square feet of space. So, to plant 1.6 trillion trees, we would need ~22 million square kilometeres of space,
+	a space about as large as the entire north America, including the US, Canada, Mexico and more. Slowing urban sprawl 
+	doesn't help us get more land to plant trees, and replacing shrubland with forest is pointless since shrubs also
+	extract carbon from the atmosphere. This means that the only two sources of additional land for forests are 51 million square 
+	kilometers of agriculture and 28 million square kilometers of habitable barren land. Transforming barren 
+	land is rather simple in principle, because usually simply planting trees in barren areas will make the 
+	areas not barren (provided they get enough care, fertilizers, water, etc). If we could lower our meat 
+	consumption through lifestyle changes and also by adopting new types of food, we can also remove the immense amount 
+	of land used for livestock production and replace it with forested land. 
+	</p>
+
+		<p id="eighthparagraph">
+		How would we plant this many trees? If every human on the planet took it upon 
+	themselves to plant trees, a trillion trees would mean each one of us needs to plant 
+	~140 trees. 1.6 trillion trees means each of us needs to plant ~210 trees. If we did a 
+	tree per month, this will take more than 17 years. Perhaps in more developed countries 
+	we can do more, and we definitely should. Clearly this will be a mammoth task that will 
+	have to be institutionalized somehow, and (multiple) organizations will need to be incentivized 
+	to plant and maintain trees.  Every country should sign on to a certain number 
+	of trees, and they should all agree on incentives for people to do so, on providing seeds, 
+	best practices, etc. In India, the place where my parents grew up, the “Green Revolution” 
+	was achieved basically within 20 years. Do we have the collective will to get something similar 
+	done to save our planet?
+
+	</p>
+
+		<p id="ninthparagraph">
+	While I think that planting trees is a good idea, and beyond the climate benefits, trees 
+	improve the aesthetics and biodiversity around us, I think that when it comes to the central question we are 
+	contemplating here, trees alone will not get us there. We need new, technological 
+	solutions to extract carbon from the air (for example, 
+	<a href="https://e360.yale.edu/features/the-dream-of-co2-air-capture-edges-toward-reality">DAC facilities</a>) 
+	that are more efficient, cheaper and faster than planting trees. I look forward to 
+	sharing more thoughts on that in my next blog.
+
+	</p>
+
+		<p id="tenthparagraph">
+		So the conclusion here is: Yes, we need to plant more trees, a lot of trees. 
+	We need roughly 2 trillion more trees to make a real dent, so let’s start now. 
+	And beyond planting trees, we need to do more, a lot more. We have one Earth, 
+	and one fleeting chance to rescue it. Very soon it may be too late. So let’s do it, now. 
+	Leaders of the world, this 14 year old joins millions of others to request you to 
+	please come up with concrete goals and timelines, and execute. Talk alone gets nothing done, the action that comes from it 
+	does. And there is already too much hot air around us.
+	</p>
 
                     </div> <!-- entry__content -->
+
+                    
+
+                    
 
                 </article> <!-- end entry -->
 
@@ -178,7 +350,7 @@
                    <ul>
                         <li><a href="#0" title="">Music</a> (None so far...)</li>
                         <li><a href="#0" title="">Games</a> (None so far...)</li>
-                        <li><a href="#0" title="">Climate Change</a> (2)</li>
+                        <li><a href="#0" title="">Climate Change</a> (1)</li>
                         
                     </ul>
                 </div>
