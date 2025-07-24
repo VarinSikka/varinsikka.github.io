@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language game (name TBD)</title>
+  <!-- leaflet  -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #controls {
+      padding: 10px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    button, select {
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+
+    #languageReveal {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    
+    #map { height: 70vh; }
+    #info { padding: 10px; }    
+    #scoreboard { font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <audio id="audioPlayer" controls></audio>
+    <button id="guessBtn" disabled>Guess</button>
+    <button id="nextBtn" disabled>Next</button>
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy</option> <!-- more or less all langs over 100 million speakers -->
+      <option value="medium">Medium</option> <!-- more or less all langs over 10 million speakers -->
+      <option value="hard">Hard</option> <!-- more or less all langs over 1 million speakers -->
+      <option value="insane">Insane</option> <!-- all langs over 100 thousand speakers -->
+      <option value="impossible">Literally Impossible</option> <!-- all langs possible -->
+    </select>
+    <!-- rounds + points counter -->
+    <div id="scoreboard">
+      Round: <span id="roundCount">0</span> | Points: <span id="totalPoints">0</span>
+    </div>
+    <!-- for revealing language after guess -->
+    <div id="languageReveal"></div>
+  </div>
+  <div id="map"></div>
+  <div id="info"></div>
+
+  <!-- leaflet, js -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- the actual script -->
+  <script>
+    
+    // placeholders, replace with real data
+    const languages = {
+      easy: [
+        { name: 'LangA', audio: 'audio/a.mp3', lat: 48.8566, lng: 2.3522 },
+        { name: 'LangB', audio: 'audio/b.mp3', lat: 40.7128, lng: -74.0060 }
+      ],
+      medium: [
+        { name: 'LangC', audio: 'audio/c.mp3', lat: -33.8688, lng: 151.2093 },
+        { name: 'LangD', audio: 'audio/d.mp3', lat: 35.6895, lng: 139.6917 }
+      ],
+      hard: [ /* ... */ ],
+      insane: [ /* ... */ ],
+      impossible: [ /* ... */ ]
+    };
+
+    // initializing map
+    const map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 }).addTo(map);
+
+    let guessMarker = null;
+    let actualMarker = null;
+    let currentSample = null;
+    let roundCount = 0;
+    let totalPoints = 0;
+
+    const audioPlayer = document.getElementById('audioPlayer');
+    const guessBtn = document.getElementById('guessBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const roundCountEl = document.getElementById('roundCount');
+    const totalPointsEl = document.getElementById('totalPoints');
+    const infoEl = document.getElementById('info');
+    const difficultyEl = document.getElementById('difficulty');
+    const languageRevealEl = document.getElementById('languageReveal');
+
+    function resetGame() {
+      roundCount = 0;
+      totalPoints = 0;
+      updateScoreboard();
+      languageRevealEl.textContent = '';
+    }
+
+    function updateScoreboard() {
+      roundCountEl.textContent = roundCount;
+      totalPointsEl.textContent = totalPoints;
+    }
+
+    function enableMapClick() {
+      map.on('click', onMapClick);
+    }
+
+    function disableMapClick() {
+      map.off('click', onMapClick);
+    }
+
+    function loadNextSample() {
+      clearMarkers();
+      infoEl.textContent = '';
+      languageRevealEl.textContent = '';
+      guessBtn.disabled = true;
+      nextBtn.disabled = true;
+
+      const diff = difficultyEl.value;
+      const samples = languages[diff];
+      currentSample = samples[Math.floor(Math.random() * samples.length)];
+
+      audioPlayer.src = currentSample.audio;
+      audioPlayer.play();
+
+      enableMapClick();
+    }
+
+    function onMapClick(e) {
+      if (guessMarker) {
+        guessMarker.setLatLng(e.latlng);
+      } else {
+        guessMarker = L.marker(e.latlng).addTo(map);
+      }
+      guessBtn.disabled = false;
+    }
+
+    function onGuess() {
+      disableMapClick();
+      guessBtn.disabled = true;
+      nextBtn.disabled = false;
+
+      const guessPos = guessMarker.getLatLng();
+      const actualPos = L.latLng(currentSample.lat, currentSample.lng);
+
+      // haversine distance in km
+      const R = 6371;
+      const dLat = (actualPos.lat - guessPos.lat) * Math.PI / 180;
+      const dLng = (actualPos.lng - guessPos.lng) * Math.PI / 180;
+      const a =
+        Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(guessPos.lat * Math.PI/180) * Math.cos(actualPos.lat * Math.PI/180) *
+        Math.sin(dLng/2) * Math.sin(dLng/2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      const distance = R * c;
+
+      // score formula based on dist
+      const score = Math.round(Math.max(0, (1 - distance / 20000)) * 5000);
+      totalPoints += score;
+      roundCount += 1;
+      updateScoreboard();
+
+      // show actual location + lang name
+      actualMarker = L.marker(actualPos, { opacity: 0.7 }).addTo(map);
+      languageRevealEl.textContent = `The language was ${currentSample.name}!`;
+
+      infoEl.innerHTML =
+        `<p>Your distance: ${distance.toFixed(2)} km</p>` +
+        `<p>Points this round: ${score}</p>`;
+    }
+
+    function clearMarkers() {
+      if (guessMarker) {
+        map.removeLayer(guessMarker);
+        guessMarker = null;
+      }
+      if (actualMarker) {
+        map.removeLayer(actualMarker);
+        actualMarker = null;
+      }
+    }
+
+    // event listeners
+    guessBtn.addEventListener('click', onGuess);
+    nextBtn.addEventListener('click', loadNextSample);
+    difficultyEl.addEventListener('change', () => {
+      resetGame();
+      clearMarkers();
+    });
+
+    // initialize game
+    resetGame();
+    loadNextSample();
+  </script>
+</body>
+</html>
