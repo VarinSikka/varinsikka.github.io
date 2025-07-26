@@ -46,8 +46,7 @@
       <option value="easy">Easy</option> <!-- more or less all langs over 100 million speakers -->
       <option value="medium">Medium</option> <!-- more or less all langs over 10 million speakers -->
       <option value="hard">Hard</option> <!-- more or less all langs over 1 million speakers -->
-      <option value="insane">Insane</option> <!-- all langs over 100 thousand speakers -->
-      <option value="impossible">Literally Impossible</option> <!-- all langs possible -->
+      <option value="insane">Impossible</option> <!-- all langs over 100 thousand speakers -->
     </select>
     <!-- rounds + points counter -->
     <div id="scoreboard">
@@ -67,16 +66,20 @@
     // placeholders, replace with real data
     const languages = {
       easy: [
-        { name: 'LangA', audio: 'audio/a.mp3', lat: 48.8566, lng: 2.3522 },
-        { name: 'LangB', audio: 'audio/b.mp3', lat: 40.7128, lng: -74.0060 }
+        { name: 'LangA', audio: 'audio/a.mp3', lat: 48.8566, lng: 2.3522 }
       ],
       medium: [
-        { name: 'LangC', audio: 'audio/c.mp3', lat: -33.8688, lng: 151.2093 },
-        { name: 'LangD', audio: 'audio/d.mp3', lat: 35.6895, lng: 139.6917 }
+        { name: 'LangB', audio: 'audio/b.mp3', lat: -33.8688, lng: 151.2093 }
       ],
-      hard: [ /* ... */ ],
-      insane: [ /* ... */ ],
-      impossible: [ /* ... */ ]
+      hard: [
+        { name: 'Albanian (Tosk)', audio: 'audio/albanian-tosk.mp3', lat: 41.0294, lng: 20.0495 }, // wikitongues
+        { name: 'Armenian', audio: 'audio/armenian.mp3', lat: 40.3227, lng: 44.8590 } // wikitongues
+      ],
+      impossible: [
+        { name: 'Albanian (Gheg)', audio: 'audio/albanian-gheg.mp3', lat: 41.7018, lng: 19.9023 }, // wikitongues
+        { name: 'Arbëresh', audio: 'audio/arberesh.mp3', lat: 39.6853, lng: 16.2688 }, // wikitongues
+        { name: 'Latgalian', audio: 'audio/latgalian.mp3', lat: 56.3967, lng: 27.1149 } // bible.com
+      ]
     };
 
     // initializing map
