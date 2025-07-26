@@ -63,22 +63,49 @@
   <!-- the actual script -->
   <script>
     
-    // placeholders, replace with real data
+    // data addition WIP (credit to audio sources in comments after each entry)
     const languages = {
       easy: [
-        { name: 'LangA', audio: 'audio/a.mp3', lat: 48.8566, lng: 2.3522 }
+        { name: 'English', audio: 'audio/bruh.mp3', lat: 52.8905, lng: -1.2408 }, // Gaming Sound FX (yt)
+        { name: 'German', audio: 'audio/german.mp3', lat: 51.1053, lng: 10.2501 } // wikitongues
       ],
       medium: [
-        { name: 'LangB', audio: 'audio/b.mp3', lat: -33.8688, lng: 151.2093 }
+        { name: 'Irish', audio: 'audio/irish.mp3', lat: 53.2397, lng: -7.7306 }, // TG4
+        { name: 'Danish', audio: 'audio/danish.mp3', lat: 55.9935, lng: 9.4135 }, // wikitongues
+        { name: 'Dutch', audio: 'audio/dutch.mp3', lat: 51.9953, lng: 5.3886 }, // Language Boost (yt)
+        { name: 'Norwegian', audio: 'audio/norwegian.mp3', lat: 60.6431, lng: 8.6768 }, // TODO: add from wikitongues
+        { name: 'Swedish', audio: 'audio/swedish.mp3', lat: 59.5728, lng: 14.8267 }, // TODO: add from wikitongues
+        { name: 'Greek', audio: 'audio/greek.mp3', lat: 38.2061, lng: 23.7113 } // TODO: add from omniglot
       ],
       hard: [
         { name: 'Albanian (Tosk)', audio: 'audio/albanian-tosk.mp3', lat: 41.0294, lng: 20.0495 }, // wikitongues
-        { name: 'Armenian', audio: 'audio/armenian.mp3', lat: 40.3227, lng: 44.8590 } // wikitongues
+        { name: 'Armenian', audio: 'audio/armenian.mp3', lat: 40.3227, lng: 44.8590 }, // wikitongues
+        { name: 'Latvian', audio: 'audio/latvian.mp3', lat: 56.9024, lng: 24.4926 }, // wikitongues
+        { name: 'Lithuanian', audio: 'audio/lithuanian.mp3', lat: 55.1440, lng: 24.0944 }, // wikitongues
+        { name: 'Welsh', audio: 'audio/welsh.mp3', lat: 52.4541, lng: -3.5393 }, // wikitongues
+        { name: 'Bavarian', audio: 'audio/bavarian.mp3', lat: 48.4505, lng: 11.9410 }, // wikitongues
+        { name: 'Afrikaans', audio: 'audio/afrikaans.mp3', lat: -32.1536, lng: 20.3670 }, // wikitongues
+        { name: 'Icelandic', audio: 'audio/icelandic.mp3', lat: 64.7260, lng: -18.7410 }, // TODO: add from wikitongues
+        { name: 'Low German', audio: 'audio/low-german.mp3', lat: 53.1232, lng: 11.1712 }, // TODO: add from bible.com
+        { name: 'Swiss German', audio: 'audio/swiss-german.mp3', lat: 47.3739, lng: 8.5334 }, // TODO: add from wikitongues
+        { name: 'Scots', audio: 'audio/scots.mp3', lat: 56.6841, lng: -4.0118 } // TODO: add from omniglot
       ],
       impossible: [
         { name: 'Albanian (Gheg)', audio: 'audio/albanian-gheg.mp3', lat: 41.7018, lng: 19.9023 }, // wikitongues
         { name: 'Arbëresh', audio: 'audio/arberesh.mp3', lat: 39.6853, lng: 16.2688 }, // wikitongues
-        { name: 'Latgalian', audio: 'audio/latgalian.mp3', lat: 56.3967, lng: 27.1149 } // bible.com
+        { name: 'Latgalian', audio: 'audio/latgalian.mp3', lat: 56.3967, lng: 27.1149 }, // bible.com
+        { name: 'Breton', audio: 'audio/breton.mp3', lat: 48.1075, lng: -2.5670 }, // wikitongues
+        { name: 'Cornish', audio: 'audio/cornish.mp3', lat: 50.7022, lng: -4.0953 }, // wikitongues
+        { name: 'Faroese', audio: 'audio/faroese.mp3', lat: 61.8755, lng: -6.8328 }, // Sendistovan (yt)
+        { name: 'Limburgish', audio: 'audio/limburgish.mp3', lat: 50.9699, lng: 5.8393 }, // wikitongues
+        { name: 'East Frisian', audio: 'audio/east-frisian.mp3', lat: 53.3560, lng: 7.6014 }, // wikitongues
+        { name: 'West Frisian', audio: 'audio/west-frisian.mp3', lat: 53.1273, lng: 5.8606 }, // wikitongues
+        { name: 'Luxembourgish', audio: 'audio/luxembourgish.mp3', lat: 49.7042, lng: 6.1242 }, // TODO: add from wikitongues
+        { name: 'Pennsylvania Dutch', audio: 'audio/pennsylvania-dutch.mp3', lat: 40.8272, lng: -77.1787 }, // TODO: add from wikitongues
+        { name: 'Yiddish', audio: 'audio/yiddish.mp3', lat: 51.1053, lng: 10.2501 }, // TODO: add from wikitongues
+        { name: 'Wymysorys', audio: 'audio/wymysorys.mp3', lat: 49.9172, lng: 19.1511 }, // TODO: add from omniglot
+        { name: 'Swabian', audio: 'audio/wymysorys.mp3', lat: 48.5480, lng: 9.9347 }, // TODO: add from wikitongues
+        { name: 'Tsakonian', audio: 'audio/tsakonian.mp3', lat: 37.2901, lng: 22.7693 } // TODO: add from wikitongues
       ]
     };
 
