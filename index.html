@@ -52,9 +52,9 @@
 
             <div class="s-header__content column">
                 <h1 class="s-header__logotext">
-                    <a href="index.html" title="">Varin's Blog</a>
+                    <a href="index.html" title="">Varin Sikka</a>
                 </h1>
-                <p class="s-header__tagline">varinsikka.github.io</p>
+                <p class="s-header__tagline">Linguistics &bull; Climate &bull; Projects</p>
             </div>
 
         </div> <!-- end row -->
@@ -65,10 +65,12 @@
 
                 <ul class="s-header__nav">
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="blog/treeco2.html">Blog</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#sections">Sections</a></li>
                 </ul> <!-- end #nav -->
 
-           </div> 
+           </div>
 
         </nav> <!-- end #nav-wrap -->
 
@@ -84,179 +86,183 @@
 
         <div class="row">
 
-            <div id="main" class="s-content__main large-8 column">
-				
-				<section class="page-content">
+            <div id="main" class="s-content__main column">
+
+                <!-- About Me -->
+                <section class="about-section page-content">
 
                     <h2 class="page-content__title h1">Hi, my name is Varin Sikka</h2>
-                    
+
                     <p class="lead">
-                    I'm a senior at <a href="https://www.khanlabschool.org/">Khan Lab School</a>
+                        I'm a student at <a href="https://www.stanford.edu/">Stanford University</a>.
                     </p>
-					
-					<p>This blog is my sometimes random, sometimes deliberate, thoughts 
-on linguistics, music, and climate change. I don't have a way yet to 
-incorporate your comments in here, but I'm working on it. Thanks for visiting!</p>
-    
-				</section>
 
-		<article class="entry">
-			
-			<header class="entry__header">
-				
-				<h2 class="entry__title h1">
-					<a href="blog/llmtranslation.html" title="">Why we're a long way from accurate machine translation</a>
-				</h2>
-				
-				<div class="entry__meta">
-					<ul>
-						<li>August 21, 2023</li>
-						<li><a href="#" title="" rel="category tag">Artificial Intelligence</a></li>
-						
-					</ul>
-				</div>
-				
-			</header>
-			
-			<div class="entry__content">
-				<p>
-			I read a paper recently that evaluated the performance of various LLMs in translating various languages. The results seem pretty interesting (overall), 
-			and then this got me into a rabbit hole of trying to understand exactly how LLms do machine translation. <a href="blog/llmtranslation.html">Read More</a>
-				</p>
-			</div>
-			
-		</article>
+                    <p>This site collects my writing, projects, and topic overviews across linguistics, climate change, and community.
+                    Things marked <span class="wip-badge">WIP</span> are still in progress. Thanks for visiting!</p>
 
-		<article class="entry">
-			
-			<header class="entry__header">
-				
-				<h2 class="entry__title h1">
-					<a href="blog/khmer.html" title="">The Hardest Language to Read?</a>
-				</h2>
-				
-				<div class="entry__meta">
-					<ul>
-						<li>July 21, 2023</li>
-						<li><a href="#" title="" rel="category tag">Linguistics</a></li>
-						
-					</ul>
-				</div>
-				
-			</header>
-			
-			<div class="entry__content">
-				<p>
-			One question I've often debated with some fellow linguistics enthusiasts, and also seen talked about online, is what the 
-                        hardest script to read/write, or the hardest language to speak/learn is. Many people have their own different opinions on these questions, but my 
-                        personal "hardest script to read" and "hardest language to speak" would be Khmer, the official language of Cambodia. <a href="blog/khmer.html">Read More</a>
-				</p>
-			</div>
-			
-		</article>
-		
-		<article class="entry">
-			
-			<header class="entry__header">
-				
-				<h2 class="entry__title h1">
-					<a href="blog/solutionsinteractive.html" title="">Climate Change: Analyzing Other Solutions.</a>
-				</h2>
-				
-				<div class="entry__meta">
-					<ul>
-						<li>January 25, 2022</li>
-						<li><a href="#" title="" rel="category tag"> Climate Change</a></li>
-						
-					</ul>
-				</div>
-				
-			</header>
-			
-			<div class="entry__content">
-				<p>
-			As I talked about in my last blog, in order to go carbon neutral we need to plant a LOT of trees (specifically ~1.607 trillion).
-		I decided to put a spin on two important pieces of data from it by making them interactive. Here, we have some adjustable values that when 
-		adjusted produce different results, so you can see what different plans of action we'd need to take in different scenarios. The first of these 
-		shows how many trees we'd need to plant based on different amounts of carbon that we emit annually. <a href="blog/solutionsinteractive.html">Read More</a>
-				</p>
-			</div>
-			
-		</article>
+                </section>
 
-                <article class="entry">
+                <!-- Blog -->
+                <section class="portfolio-section" id="blog">
 
-                    <header class="entry__header">
+                    <h2 class="portfolio-section__title">Blog</h2>
 
-                        <h2 class="entry__title h1">
-                            <a href="blog/treeco2.html" title="">Planting trees to deal with climate change.</a>
-                        </h2>
+                    <div class="card-grid">
 
-                        <div class="entry__meta">
-                            <ul>
-                                <li>November 4, 2021</li>
-                                <li><a href="#" title="" rel="category tag">Climate Change</a></li>
-                                
-                            </ul>
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Artificial Intelligence</span>
+                                <h3 class="card__title">
+                                    <a href="blog/llmtranslation.html">Why we're a long way from accurate machine translation</a>
+                                </h3>
+                                <p class="card__date">August 21, 2023</p>
+                                <p class="card__desc">LLMs are increasingly used for translation, but benchmarks and the mechanics of how models handle language reveal significant gaps that hype often obscures.</p>
+                                <a class="card__link" href="blog/llmtranslation.html">Read &rarr;</a>
+                            </div>
                         </div>
-                     
-                    </header>
-                    
-                    <div class="entry__content">
-                        <p>
-		According to NASA, we emit ~10 gigatons of carbon into the atmosphere 
-every year (we emit far more carbon every year, but ~10 gigatons is the 
-amount of carbon that is added to the atmosphere and not absorbed by 
-trees, the ocean, or anything else). According to three experts on Quora
- (an unnamed research engineer, Frank Roeske and Riggald Eux), there is a
- total of ~3,200 gigatons of CO2 in the atmosphere, and of this ~1,100 
-gigatons of CO2 have been added due to human activity since 1880. There 
-are about 3 trillion trees in the world (<a href="https://www.gotreequotes.com/how-many-trees-in-world/#:~:text=Globally%2C%20there%20are%20estimated%20to%20be%203.04%20trillion%20trees.&amp;text=This%20means%20that%20there%20are,for%20every%20person%20on%20earth.">Source: gotreequotes.com</a>), and because of deforestation in the Amazon rainforests, Indonesia, and many other parts of the world (<a href="https://www.worldwildlife.org/stories/11-of-the-world-s-most-threatened-forests">Source: WWF</a>),
- this number is decreasing. People are also thinking about, and 
-launching, initiatives to plant more trees around the world. So the 
-questions I want to explore are: What can we do using trees to reduce 
-the excess carbon in our atmosphere? Is this feasible? And what would it
- take? <a href="blog/treeco2.html">Read more</a>
-	</p>
-                    </div> 
 
-                </article> <!-- end entry --><!-- end entry --><!-- end entry --><!-- end entry -->
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Linguistics</span>
+                                <h3 class="card__title">
+                                    <a href="blog/khmer.html">The Hardest Language to Read?</a>
+                                    <span class="wip-badge">WIP</span>
+                                </h3>
+                                <p class="card__date">July 21, 2023</p>
+                                <p class="card__desc">A deep dive into Khmer &mdash; its script, phoneme inventory, and consonant clusters &mdash; and the case for why it's among the most demanding languages to learn to read.</p>
+                                <a class="card__link" href="blog/khmer.html">Read &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Climate Change</span>
+                                <h3 class="card__title">
+                                    <a href="blog/solutionsinteractive.html">Climate Change: Analyzing Other Solutions</a>
+                                </h3>
+                                <p class="card__date">January 25, 2022</p>
+                                <p class="card__desc">Interactive calculators for adjusting carbon-emission and tree-planting variables to explore what different climate action scenarios would actually require.</p>
+                                <a class="card__link" href="blog/solutionsinteractive.html">Read &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Climate Change</span>
+                                <h3 class="card__title">
+                                    <a href="blog/treeco2.html">Planting trees to deal with climate change</a>
+                                </h3>
+                                <p class="card__date">November 4, 2021</p>
+                                <p class="card__desc">How many trees would we actually need to offset human carbon emissions? An exploration of the Fermi-estimate numbers behind tree-planting as a climate solution.</p>
+                                <a class="card__link" href="blog/treeco2.html">Read &rarr;</a>
+                            </div>
+                        </div>
+
+                    </div><!-- end card-grid -->
+
+                </section><!-- end blog -->
+
+
+                <!-- Projects -->
+                <section class="portfolio-section" id="projects">
+
+                    <h2 class="portfolio-section__title">Projects</h2>
+
+                    <div class="card-grid">
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Linguistics</span>
+                                <h3 class="card__title">
+                                    <a href="projects/lang-game.html">Language Guessing Game</a>
+                                    <span class="wip-badge">WIP</span>
+                                </h3>
+                                <p class="card__date">Interactive</p>
+                                <p class="card__desc">Listen to audio clips from around the world and guess the language by clicking a map. Multiple difficulty levels from major world languages to rare regional dialects.</p>
+                                <a class="card__link" href="projects/lang-game.html">Play &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Linguistics</span>
+                                <h3 class="card__title">
+                                    <a href="projects/linguistics-paper.html">Sound Correspondences in Austronesian and Kra-Dai Cognates</a>
+                                </h3>
+                                <p class="card__date">October 10, 2024</p>
+                                <p class="card__desc">A research paper examining sound correspondences between two major Southeast Asian language families and what they reveal about historical linguistic contact.</p>
+                                <a class="card__link" href="projects/linguistics-paper.html">Read &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Climate Change</span>
+                                <h3 class="card__title">
+                                    <a href="projects/dacpolicy.html">CO2 Removal: The Basics, and Next Steps</a>
+                                </h3>
+                                <p class="card__date">September 21, 2023</p>
+                                <p class="card__desc">A policy-oriented overview of direct air capture technology &mdash; the science, the current state of deployment, and what scaling would require.</p>
+                                <a class="card__link" href="projects/dacpolicy.html">Read &rarr;</a>
+                            </div>
+                        </div>
+
+                    </div><!-- end card-grid -->
+
+                </section><!-- end projects -->
+
+
+                <!-- Sections -->
+                <section class="portfolio-section" id="sections">
+
+                    <h2 class="portfolio-section__title">Sections</h2>
+
+                    <div class="card-grid">
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Linguistics</span>
+                                <h3 class="card__title">
+                                    <a href="sections/linguistics.html">Linguistics</a>
+                                    <span class="wip-badge">WIP</span>
+                                </h3>
+                                <p class="card__date">Overview</p>
+                                <p class="card__desc">A curated overview of linguistics work: research papers, ILO competition results, and educational resources.</p>
+                                <a class="card__link" href="sections/linguistics.html">View &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Climate Change</span>
+                                <h3 class="card__title">
+                                    <a href="sections/climate.html">Climate</a>
+                                    <span class="wip-badge">WIP</span>
+                                </h3>
+                                <p class="card__date">Overview</p>
+                                <p class="card__desc">A curated overview of climate-related work: research, policy writing, and program contributions.</p>
+                                <a class="card__link" href="sections/climate.html">View &rarr;</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__inner">
+                                <span class="card__badge">Community</span>
+                                <h3 class="card__title">
+                                    <a href="sections/community.html">Community</a>
+                                    <span class="wip-badge">WIP</span>
+                                </h3>
+                                <p class="card__date">Overview</p>
+                                <p class="card__desc">A curated overview of community service work: food/clothing drives, organizing HackaKhan, and a Bay Area student pitch event.</p>
+                                <a class="card__link" href="sections/community.html">View &rarr;</a>
+                            </div>
+                        </div>
+
+                    </div><!-- end card-grid -->
+
+                </section><!-- end sections -->
 
            </div> <!-- end main -->
-
-
-            <div id="sidebar" class="s-content__sidebar large-4 column">
-
-
-               <div class="widget widget--categories">
-                   <h3 class="h6">Categories.</h3> 
-                   <ul>
-                        <li><a href="#0" title="">Music</a> (None so far...)</li>
-                        <li><a href="#0" title="">Games</a> (None so far...)</li>
-                        <li><a href="#0" title="">Climate Change</a> (1)</li>
-                        
-                    </ul>
-                </div>
-
-                
-
-                <div class="widget widget_tags">
-                    <h3 class="h6">Post Tags.</h3>
-
-                    <div class="tagcloud group">
-                        <a href="#0">Computers</a>
-                        <a href="#0">Switch</a>
-                        <a href="#0">Pollution</a>
-                        <a href="#0">Guitar</a>
-                        <a href="#0">Vocals</a>
-                        <a href="#0">Carbon Footprint</a>
-                        <a href="#0">Atmosphere</a>
-                    </div>
-                </div>
-
-                
-               
-            </div> <!-- end sidebar -->
 
        </div> <!-- end row -->
 
@@ -267,24 +273,19 @@ the excess carbon in our atmosphere? Is this feasible? And what would it
     ================================================== -->
     <footer class="s-footer">
 
-
         <div class="row s-footer__bottom">
 
             <div class="large-6 tab-full column s-footer__info">
-                <h3 class="h6">About This Blog</h3>
+                <h3 class="h6">About This Site</h3>
 
-                <p>This blog is my sometimes random, sometimes deliberate, thoughts 
-on linguistics, music, and climate change.</p>
+                <p>A personal portfolio of writing, research, and projects on linguistics, climate change, and community. Made with HTML, CSS, and curiosity.</p>
             </div>
 
-            
-
             <div class="ss-copyright">
-                <span>© Copyright Varin Sikka 2021-2024</span>
+                <span>&copy; Copyright Varin Sikka 2021&ndash;2025</span>
             </div>
 
         </div> <!-- end footer__bottom -->
-
 
         <div class="ss-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">

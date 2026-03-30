@@ -2605,3 +2605,161 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         border-left: none;
     }
 }
+
+
+/* ===================================================================
+ * # Portfolio index additions
+ * ------------------------------------------------------------------- */
+
+/* Fix sidebar-era right padding for full-width index layout */
+.s-content__main.column:not(.large-8) {
+    padding-right: 20px;
+}
+
+/* Section dividers */
+.portfolio-section {
+    margin-top: 5.6rem;
+    margin-bottom: 3.2rem;
+}
+.portfolio-section__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.802rem;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+    color: #272727;
+    margin: 0 0 1.2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #84be5b;
+    display: inline-block;
+}
+
+/* Card grid */
+.card-grid {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2.4rem -12px 0;
+}
+.card {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 12px;
+    margin-bottom: 2.4rem;
+    box-sizing: border-box;
+}
+.card__inner {
+    background: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding: 2.4rem 2.4rem 2rem;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.card__inner:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,.10);
+    transform: translateY(-2px);
+}
+
+/* Category badge (green) */
+.card__badge {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: #ffffff;
+    background-color: #84be5b;
+    border-radius: 3px;
+    padding: .2rem .7rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Card title */
+.card__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #272727;
+    margin: 0 0 .6rem 0;
+}
+.card__title a {
+    color: #272727;
+    text-decoration: none;
+}
+.card__title a:hover,
+.card__title a:focus {
+    color: #656986;
+}
+
+/* WIP badge — used in cards and on individual page titles */
+.wip-badge {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    letter-spacing: .08rem;
+    color: #a7a7a7;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: .1rem .5rem;
+    vertical-align: middle;
+    margin-left: .5rem;
+    position: relative;
+    top: -.1rem;
+}
+
+/* Card date + description */
+.card__date {
+    font-family: "Merriweather", serif;
+    font-size: 1.266rem;
+    color: #a7a7a7;
+    margin-bottom: 1.2rem;
+}
+.card__desc {
+    font-family: "Merriweather", serif;
+    font-size: 1.422rem;
+    line-height: 1.8;
+    color: #3e3e3e;
+    flex: 1;
+    margin: 0 0 1.6rem 0;
+}
+
+/* Card action link */
+.card__link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.266rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: #84be5b;
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-block;
+}
+.card__link:hover,
+.card__link:focus {
+    color: #656986;
+}
+
+/* About section separator */
+.about-section {
+    padding-bottom: 2.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #efefef;
+}
+
+/* Responsive: 2-col at tablet, 1-col at mobile */
+@media screen and (max-width: 900px) {
+    .card { flex: 0 0 50%; max-width: 50%; }
+}
+@media screen and (max-width: 600px) {
+    .card { flex: 0 0 100%; max-width: 100%; }
+    .portfolio-section__title { font-size: 1.602rem; }
+}
