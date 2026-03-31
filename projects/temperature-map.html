@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>World Temperature Anomaly Map — Varin Sikka</title>
+    <meta name="description" content="Interactive world map showing daily temperature anomalies for 2025.">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- script
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        /* Map container */
+        #tm-map-wrap {
+            position: relative;
+            width: 100%;
+            margin: 2rem 0 1.2rem;
+        }
+        #tm-map {
+            width: 100%;
+            height: 520px;
+            border: 1px solid #efefef;
+            border-radius: 4px;
+            background: #1a1a2e;
+            z-index: 1;
+        }
+
+        /* Mode toggle */
+        #tm-mode-toggle {
+            display: flex;
+            gap: .8rem;
+            margin-bottom: 1.6rem;
+            flex-wrap: wrap;
+        }
+        .tm-btn {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: .08rem;
+            border: 2px solid #84be5b;
+            border-radius: 3px;
+            background: transparent;
+            color: #84be5b;
+            padding: .35rem 1.1rem;
+            cursor: pointer;
+            transition: background .15s, color .15s;
+        }
+        .tm-btn:hover { background: #84be5b; color: #fff; }
+        .tm-btn--active { background: #84be5b; color: #fff; }
+
+        /* Controls bar */
+        #tm-controls {
+            display: flex;
+            align-items: center;
+            gap: 1.4rem;
+            margin: 1rem 0 .4rem;
+            flex-wrap: wrap;
+        }
+        #tm-play-btn {
+            background: #84be5b;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: .45rem 1.3rem;
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            min-width: 46px;
+            transition: background .15s;
+        }
+        #tm-play-btn:hover { background: #6aa045; }
+        #tm-slider-wrap {
+            flex: 1;
+            min-width: 200px;
+        }
+        #tm-slider {
+            width: 100%;
+            cursor: pointer;
+            accent-color: #84be5b;
+        }
+        #tm-date-display {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: #272727;
+            white-space: nowrap;
+            min-width: 110px;
+        }
+
+        /* Legend */
+        #tm-legend {
+            position: absolute;
+            bottom: 28px;
+            right: 10px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .9);
+            border-radius: 4px;
+            padding: .6rem .9rem;
+            font-family: "Open Sans", sans-serif;
+            box-shadow: 0 1px 5px rgba(0,0,0,.25);
+            pointer-events: none;
+        }
+        #tm-legend-gradient {
+            width: 190px;
+            height: 13px;
+            border-radius: 2px;
+            background: linear-gradient(to right,
+                #313695, #4575b4, #74add1, #abd9e9, #e0f3f8,
+                #ffffbf,
+                #fee090, #fdae61, #f46d43, #d73027, #a50026);
+        }
+        #tm-legend-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: .85rem;
+            color: #555;
+            margin-top: 3px;
+        }
+        #tm-legend-unit {
+            text-align: center;
+            color: #888;
+            font-size: .82rem;
+            margin-top: 2px;
+        }
+
+        /* Loading indicator */
+        #tm-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1001;
+            background: rgba(255,255,255,.85);
+            border-radius: 4px;
+            padding: .5rem 1rem;
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.1rem;
+            color: #555;
+            display: none;
+            pointer-events: none;
+        }
+
+        /* Attribution note */
+        .tm-attribution {
+            font-size: 1.15rem;
+            color: #a7a7a7;
+            margin-top: 1.8rem;
+            line-height: 1.6;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #tm-map { height: 340px; }
+            #tm-legend-gradient { width: 140px; }
+            #tm-legend-labels { font-size: .75rem; }
+        }
+    </style>
+
+</head>
+
+<body id="top" class="ss-single">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="../index.html" title="">Varin's Blog</a>
+                </h1>
+                <p class="s-header__tagline">varinsikka.github.io</p>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="#0">Projects</a></li>
+                </ul> <!-- end #nav -->
+
+           </div>
+
+        </nav> <!-- end #nav-wrap -->
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main column">
+
+                <article class="entry">
+
+                    <header class="entry__header">
+
+                        <h2 class="entry__title h1">
+                            <a href="temperature-map.html" title="">World Temperature Anomaly Map</a>
+                            <span class="wip-badge">WIP</span>
+                        </h2>
+
+                        <div class="entry__meta">
+                            <ul>
+                                <li>2025 data</li>
+                                <li><a href="#" title="" rel="category tag">Climate Change</a></li>
+                            </ul>
+                        </div>
+
+                    </header> <!-- entry__header -->
+
+                    <div class="entry__content">
+
+                        <p class="lead">
+                            How much warmer or cooler was each location's daily high temperature compared to the historical average for that day?
+                            This map shows temperature anomalies for every day of 2025, using ERA5 reanalysis data from ECMWF.
+                        </p>
+
+                        <!-- Mode toggle -->
+                        <div id="tm-mode-toggle">
+                            <button id="tm-mode-2025" class="tm-btn tm-btn--active">2025 Daily Anomaly</button>
+                            <button id="tm-mode-clim" class="tm-btn">Yearly Averages <span class="wip-badge" style="vertical-align:middle;">WIP</span></button>
+                        </div>
+
+                        <!-- Map -->
+                        <div id="tm-map-wrap">
+                            <div id="tm-map"></div>
+                            <div id="tm-loading">Loading&hellip;</div>
+                            <div id="tm-legend">
+                                <div id="tm-legend-gradient"></div>
+                                <div id="tm-legend-labels">
+                                    <span>&minus;10&deg;</span>
+                                    <span>&minus;5&deg;</span>
+                                    <span>0&deg;</span>
+                                    <span>+5&deg;</span>
+                                    <span>+10&deg;</span>
+                                </div>
+                                <div id="tm-legend-unit">Anomaly (&deg;C)</div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div id="tm-controls">
+                            <button id="tm-play-btn" title="Play/Pause">&#9654;</button>
+                            <div id="tm-slider-wrap">
+                                <input type="range" id="tm-slider" min="1" max="365" value="1" step="1">
+                            </div>
+                            <div id="tm-date-display">Jan 1, 2025</div>
+                        </div>
+
+                        <p class="tm-attribution">
+                            Click any land location on the map for the daily high and historical average (1991&ndash;2020) in &deg;F.
+                            Ocean areas are transparent. Data: ERA5 reanalysis (ECMWF).
+                            Contains modified Copernicus Climate Change Service information (2025).
+                            Neither the European Commission nor ECMWF is responsible for any use made of this information.
+                        </p>
+
+                    </div> <!-- entry__content -->
+
+                </article> <!-- end entry -->
+
+            </div> <!-- end main -->
+
+        </div> <!-- end row -->
+
+    </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About This Blog</h3>
+                <p>This blog is my sometimes random, sometimes deliberate, thoughts
+on linguistics, music, and climate change.</p>
+            </div>
+
+            <div class="ss-copyright">
+                <span>&copy; Copyright Varin Sikka 2021&ndash;2025</span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+   </footer> <!-- end Footer-->
+
+
+   <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/temperature-map.js"></script>
+
+</body>
+
+</html>

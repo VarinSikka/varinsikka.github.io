@@ -1,0 +1,9 @@
+{
+  "year": 2025,
+  "available_days": [],
+  "missing_days": [],
+  "last_updated": "placeholder",
+  "normals_period": "1991-2020",
+  "data_source": "ERA5 via Google Earth Engine (ECMWF)",
+  "note": "Run scripts/process_temperature_map.py to populate this file and generate data assets."
+}
