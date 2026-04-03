@@ -39,26 +39,51 @@ var MONTH_NAMES = ['jan','feb','mar','apr','may','jun',
 
 // ── Build daily Tmax band for a single date ─────────────────────────────────
 
+function pad2(n) {
+    return n < 10 ? '0' + n : String(n);
+}
+
 function getDailyTmax(year, month, day) {
+    // Band name built entirely from plain JS — no ee.Number.format()
+    var bandName  = 'tmax_' + year + '_' + pad2(month) + '_' + pad2(day);
     var startDate = ee.Date.fromYMD(year, month, day);
     var endDate   = startDate.advance(1, 'day');
 
-    var hourlyImgs = ee.ImageCollection('ECMWF/ERA5/HOURLY')
+    // Let the export's crsTransform handle the reprojection to 0.25°.
+    // Specifying reproject() here as well causes conflicting reprojection
+    // instructions that produce edge-alignment errors at GEE tile boundaries.
+    return ee.ImageCollection('ECMWF/ERA5/HOURLY')
         .select('temperature_2m')
-        .filterDate(startDate, endDate);
-
-    var count = hourlyImgs.size();
-    var tmax  = ee.Image(ee.Algorithms.If(
-        count.gt(0),
-        hourlyImgs.max().rename('tmax_' + year + '_' +
-            ee.Number(month).format('%02d') + '_' +
-            ee.Number(day).format('%02d')),
-        ee.Image.constant(0).rename('tmax_' + year + '_' +
-            ee.Number(month).format('%02d') + '_' +
-            ee.Number(day).format('%02d'))
-    ));
-    return tmax;
+        .filterDate(startDate, endDate)
+        .max()
+        .rename(bandName);
 }
+
+// ── Quick sanity check (runs before exporting) ─────────────────────────────
+
+var testDay = getDailyTmax(YEAR, 1, 1);
+print('Jan 1 band names:', testDay.bandNames());
+print('Jan 1 sample value at (0°, 0°):', testDay.reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: ee.Geometry.Point([0, 0]),
+    scale: 27830
+}));
+print('Jan 1 sample value at (-90°, 45°):', testDay.reduceRegion({
+    reducer: ee.Reducer.first(),
+    geometry: ee.Geometry.Point([-90, 45]),
+    scale: 27830
+}));
+print('Jan 1 projection:', testDay.projection());
+var exportRegion = ee.Geometry.Rectangle([-180, -90, 180, 90], null, false);
+print('Export region area (should be ~64,800 sq-deg):', exportRegion.area(1).divide(1e10));
+
+var vis = {
+    min: 250, max: 320,
+    palette: ['313695','4575b4','74add1','abd9e9','e0f3f8',
+              'ffffbf','fee090','fdae61','f46d43','d73027','a50026']
+};
+Map.addLayer(testDay, vis, 'Tmax Jan 1 2025 (K)');
+Map.setCenter(0, 20, 2);
 
 // ── Submit one export task per month ───────────────────────────────────────
 
@@ -78,14 +103,18 @@ for (var m = 0; m < 12; m++) {
         monthlyStack = monthlyStack.addBands(dailyImages[i]);
     }
 
+    // Debug: verify band count and first/last band names before submitting
+    print('Month ' + monthName + ': band count =', monthlyStack.bandNames().size());
+    print('Month ' + monthName + ': bands =', monthlyStack.bandNames());
+
     Export.image.toDrive({
         image: monthlyStack,
         description: 'era5_2025_tmax_' + monthName,
         folder: 'temperature_map_exports',
         fileNamePrefix: 'era5_2025_tmax_' + monthName,
-        region: ee.Geometry.Rectangle([-180, -90, 180, 90]),
-        scale: 27830,
+        region: ee.Geometry.Rectangle([-180, -90, 179.999, 90], null, false),
         crs: 'EPSG:4326',
+        scale: 27830,
         maxPixels: 1e10,
         fileFormat: 'GeoTIFF',
     });

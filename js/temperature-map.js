@@ -8,9 +8,11 @@ const TempMap = (function () {
     // ── Constants ────────────────────────────────────────────────────────────
 
     const DATA_BASE   = '../data/temperature-map';
-    const GRID_ROWS   = 721;   // ERA5 0.25° grid: 90°N to 90°S inclusive
-    const GRID_COLS   = 1440;  // ERA5 0.25° grid: 180°W to 180°E (exclusive)
-    const WORLD_BOUNDS = [[-90, -180], [90, 180]];
+    // Grid dimensions — overwritten from meta.json at init; defaults match ERA5 0.25°
+    let GRID_ROWS = 721;
+    let GRID_COLS = 1440;
+    // PNGs are reprojected to Web Mercator (EPSG:3857) and clipped to ±85.051°
+    const WORLD_BOUNDS = [[-85.051129, -180], [85.051129, 180]];
     const OVERLAY_OPACITY = 0.78;
     const CACHE_MAX   = 30;    // max cached overlays (LRU eviction)
     const PLAY_MS     = 350;   // ms per frame during playback
@@ -354,7 +356,11 @@ const TempMap = (function () {
         fetch(DATA_BASE + '/meta.json')
             .then(function (r) { return r.ok ? r.json() : null; })
             .then(function (meta) {
-                if (meta) state.meta = meta;
+                if (meta) {
+                    state.meta = meta;
+                    if (meta.grid_rows) GRID_ROWS = meta.grid_rows;
+                    if (meta.grid_cols) GRID_COLS = meta.grid_cols;
+                }
                 showDay(1);
             })
             .catch(function () {

@@ -1,0 +1,14 @@
+# GEE raw exports — large source GeoTIFFs, not needed by GitHub Pages
+scripts/gee_exports/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
