@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Varin Sikka</title>
+    <title>EggBot — Varin Sikka</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -69,7 +69,7 @@
                     <li class="current"><a href="#0">Blog</a>
                 </ul> <!-- end #nav -->
 
-           </div> 
+           </div>
 
         </nav> <!-- end #nav-wrap -->
 
@@ -92,29 +92,60 @@
                     <header class="entry__header">
 
                         <h2 class="entry__title h1">
-                            <a href="community.html" title="">Featured Works in Community Service</a>
-                            <span class="wip-badge">WIP</span>
+                            <a href="eggbot.html" title="">EggBot: A Vision-Guided Egg-Scrambling Robot</a>
                         </h2>
 
                         <div class="entry__meta">
                             <ul>
-                                <li>October 10, 2024</li>
-                                <li><a href="#" title="" rel="category tag">Other</a></li>
+                                <li>June 9, 2026</li>
+                                <li><a href="#" title="" rel="category tag">Robotics</a></li>
                             </ul>
                         </div>
-                     
+
                     </header> <!-- entry__header -->
 
                     <div class="entry__content">
+
+                        <p class="lead">
+                        In the spring quarter of my freshman year (2026) at Stanford, I took CS 225A (Experimental Robotics),
+                        and the class gave me extraordinary (given that I was just a freshman) hands-on depth in robotics.
+                        I worked in a team of four (Olivia Taylor, Vakula Venkatesh, Vaishnavi Thumuganti, and I), and together
+                        we built the software for a robot arm that could autonomously cook scrambled eggs, going through the
+                        entire process (from cracking and whisking eggs, to scrambling them in the pan) on its own using
+                        a vision system instead of relying on exact, pre-determined motions every time.
+                        </p>
+
+                        <p>
+                        We ran the project on a Franka Emika arm mounted on a TidyBot base, with a wrist-mounted Intel RealSense
+                        RGB-D camera for perception. We used a vision model to find grasp points on eggs, tongs, pans, etc. and
+                        converted those points from pixels on the 2D camera feed into world coordinates. We used a combination of
+                        op-space and joint-space controllers for the robot's motion, and force control in certain areas where
+                        things needed to be handled gently (i.e. when doing pretty much anything with the eggs).
+                        </p>
+
+                        <p>
+                        The project turned out to be far more challenging than I originally expected; not only was it a bulkier
+                        project than I had ever taken on before, but there were a lot of little things I ended up having to learn on
+                        the fly (especially the OpenSai library, which I had no experience with before the class). Having made it
+                        through in one piece, however, it also turned out to be a highly rewarding experience. More than just
+                        gaining experience with certain libraries, I've also gained a good view of the field and open challenges,
+                        particularly those in classical (as opposed to learning-based) methods of robotics. It seems that sometimes
+                        learning things on the job is the best way to learn things in the first place...
+                        </p>
+
+                        <p>
+                        For anyone looking for more technical detail: my teammate Olivia put together a more technical write-up of the
+                        full project, including photos, demo videos, and a breakdown of the cooking pipeline. You can find this and the
+                        project GitHub repo linked below.
+                        </p>
+
                         <p class="lead">
                         Links:
                         </p>
 
                         <ol>
-                            <li><a href="https://rusticpathways.com/young-climate-leaders-fellowship" target="_blank">Collected 2500+ items in food, clothing drives over 3 years, recognized with Presidential Volunteer Service Award - Gold</a></li>
-                            <li><a href="https://www.hackakhan.org/" target="_blank">Organized a regional hackathon at school ("HackaKhan") twice, bringing in over 100 attendees; event viewed very positively, and expanded KLS's impact in the community</a></li>
-                            <li><a href="https://klspitchday.org/" target="_blank">Organized a "pitch day" contest at school open to all Bay Area high school students, provided opportunities for students to receive funding for their ideas from real investors</a></li>
-                            <li><a href="https://www.charitydrives.org/" target="_blank">Created website to enable others to organize local donation drives</a></li>
+                            <li><a href="https://otaylor2023.github.io/EggBot/" target="_blank">Technical write-up</a></li>
+                            <li><a href="https://github.com/otaylor2023/EggBot" target="_blank">GitHub repository</a></li>
                         </ol>
 
                     </div> <!-- entry__content -->
@@ -139,11 +170,11 @@
             <div class="large-6 tab-full column s-footer__info">
                 <h3 class="h6">About This Blog</h3>
 
-                <p>This blog is my sometimes random, sometimes deliberate, thoughts 
+                <p>This blog is my sometimes random, sometimes deliberate, thoughts
 on linguistics, music, and climate change.</p>
             </div>
 
-            
+
 
             <div class="ss-copyright">
                 <span>© Copyright Varin Sikka 2021-2026</span>
