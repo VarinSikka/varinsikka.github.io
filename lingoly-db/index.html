@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linguistics olympiad problem archive</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <a class="back-link" href="../index.html">&larr; varinsikka.github.io</a>
+    <h1>Linguistics olympiad problem archive</h1>
+    <p class="tagline">A searchable index of problems from IOL and its national counterparts</p>
+    <p class="disclaimer">Independently compiled metadata linking to original problem sources. (Not affiliated with IOL, NACLO, UKLO, or any other olympiad organization. No problem or solution text is hosted here.)</p>
+  </header>
+
+  <main>
+
+    <div class="search-row">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search problems…"
+        autocomplete="off"
+        spellcheck="false"
+      >
+      <button id="filter-toggle" class="filter-toggle">
+        Advanced filters <span class="chevron">▾</span>
+      </button>
+    </div>
+
+    <div id="filter-panel" class="filter-panel" hidden>
+      <div class="filter-grid">
+
+        <div class="filter-field">
+          <label>Solverese</label>
+          <div id="solverese-select" class="multi-select"></div>
+        </div>
+
+        <div class="filter-field">
+          <label>Olympiad</label>
+          <div id="olympiad-select" class="multi-select"></div>
+        </div>
+
+        <div class="filter-field">
+          <label>Problemese</label>
+          <input
+            type="text"
+            id="problemese-input"
+            class="text-input"
+            placeholder="e.g. Yidiny, pira1253, sgn-…"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="filter-field">
+          <label>Author</label>
+          <input
+            type="text"
+            id="author-input"
+            class="text-input"
+            placeholder="any author"
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="filter-field">
+          <label>Year range</label>
+          <div class="year-range">
+            <input type="number" id="year-min" class="year-input">
+            <span class="year-sep">to</span>
+            <input type="number" id="year-max" class="year-input">
+          </div>
+        </div>
+
+        <div class="filter-field">
+          <label>Genre tags</label>
+          <input
+            type="text"
+            id="genres-input"
+            class="text-input"
+            placeholder="phonology, morphology, …"
+            autocomplete="off"
+          >
+        </div>
+
+      </div>
+
+      <div class="filter-actions">
+        <button id="reset-btn" class="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <div class="results-header">
+      <span id="results-count"></span>
+      <span id="sort-label" class="sort-label"></span>
+    </div>
+
+    <div id="results-list" class="results-list"></div>
+    <div id="pagination" class="pagination"></div>
+
+  </main>
+
+  <!-- MiniSearch UMD bundle — must load before the ES module below -->
+  <script src="https://cdn.jsdelivr.net/npm/minisearch@7/dist/umd/index.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
