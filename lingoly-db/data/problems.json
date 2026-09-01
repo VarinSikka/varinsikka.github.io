@@ -1,5 +1,292 @@
 [
   {
+    "id": "iol-2026-1",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Central Yup'ik",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "kk",
+      "he",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Central Alaskan Yup'ik"
+    ],
+    "genres": [
+      "phonology"
+    ],
+    "authors": [
+      "Lai Otsuka"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/i1/",
+    "solution_url": "https://ioling.org/problems/2026/i1/"
+  },
+  {
+    "id": "iol-2026-2",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Yélî Dnye",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "kk",
+      "he",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Yele"
+    ],
+    "genres": [
+      "semantics"
+    ],
+    "authors": [
+      "Dan-Mircea Mirea"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/i2/",
+    "solution_url": "https://ioling.org/problems/2026/i2/"
+  },
+  {
+    "id": "iol-2026-3",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Iquito",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "kk",
+      "he",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Iquito"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Eimear McKnight"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/i3/",
+    "solution_url": "https://ioling.org/problems/2026/i3/"
+  },
+  {
+    "id": "iol-2026-4",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Sakurabiat",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "kk",
+      "he",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Mekéns"
+    ],
+    "genres": [
+      "kinship"
+    ],
+    "authors": [
+      "Lai Otsuka"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/i4/",
+    "solution_url": "https://ioling.org/problems/2026/i4/"
+  },
+  {
+    "id": "iol-2026-5",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "5",
+    "title": "Komnzo",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "kk",
+      "he",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Kómnzo"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Vesko Milev"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/i5/",
+    "solution_url": "https://ioling.org/problems/2026/i5/"
+  },
+  {
+    "id": "iol-2026-team-1",
+    "olympiad": "IOL",
+    "year": 2026,
+    "round": "Team",
+    "problem_number": "1",
+    "title": "Teotitlán del Valle Zapotec",
+    "solverese": [
+      "de",
+      "et",
+      "en",
+      "es",
+      "fr",
+      "lv",
+      "hu",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "sl",
+      "fi",
+      "sv",
+      "tr",
+      "cs",
+      "el",
+      "bg",
+      "ru",
+      "uk",
+      "th",
+      "zh",
+      "zh-tr",
+      "ja",
+      "ko"
+    ],
+    "problemese": [
+      "Teotitlán del Valle Zapotec"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Angela Hou",
+      "Nina Stadermann"
+    ],
+    "problem_url": "https://ioling.org/problems/2026/t1/",
+    "solution_url": "https://ioling.org/problems/2026/t1/"
+  },
+  {
     "id": "iol-2025-1",
     "olympiad": "IOL",
     "year": 2025,
@@ -614,7 +901,7 @@
       "ru"
     ],
     "problemese": [
-      "Arabic"
+      "Egyptian Arabic"
     ],
     "genres": [
       "numbers"
@@ -1985,7 +2272,7 @@
       "sr"
     ],
     "problemese": [
-      "Mongolian"
+      "Khalkha Mongolian"
     ],
     "genres": [],
     "authors": [
@@ -2197,7 +2484,7 @@
     ],
     "genres": [],
     "authors": [
-      "Artūrs Semeņuks"
+      "Artūrs Semeņuks"
     ],
     "problem_url": "https://ioling.org/problems/2012/i1/",
     "solution_url": "https://ioling.org/problems/2012/i1/"
@@ -2463,7 +2750,7 @@
     ],
     "genres": [],
     "authors": [
-      "Artūrs Semeņuks"
+      "Artūrs Semeņuks"
     ],
     "problem_url": "https://ioling.org/problems/2013/i3/",
     "solution_url": "https://ioling.org/problems/2013/i3/"
@@ -2707,7 +2994,7 @@
     ],
     "genres": [],
     "authors": [
-      "Artūrs Semeņuks"
+      "Artūrs Semeņuks"
     ],
     "problem_url": "https://ioling.org/problems/2014/i4/",
     "solution_url": "https://ioling.org/problems/2014/i4/"
@@ -6988,7 +7275,7 @@
       "en"
     ],
     "problemese": [
-      "Mongolian"
+      "Khalkha Mongolian"
     ],
     "genres": [],
     "authors": [
@@ -7154,7 +7441,7 @@
     "authors": [
       "Daniel Lovsted",
       "Samuel Ahmed",
-      "Ellie Warner"
+      "Elysia Warner"
     ],
     "problem_url": "https://www.uklo.org/wp-content/uploads/2022/05/2019_R2_5.-Witsuwiten.pdf",
     "solution_url": "https://www.uklo.org/wp-content/uploads/2022/05/2019_R2_5.-Witsuwiten.pdf"
@@ -7497,7 +7784,7 @@
     ],
     "genres": [],
     "authors": [
-      "Ollie Sayeed"
+      "Oliver Sayeed"
     ],
     "problem_url": "https://www.uklo.org/wp-content/uploads/2022/05/2017_2.-Inuktitut.pdf",
     "solution_url": "https://www.uklo.org/wp-content/uploads/2022/05/2017_2.-Inuktitut.pdf"
@@ -8011,7 +8298,7 @@
     ],
     "genres": [],
     "authors": [
-      "Ollie Sayeed"
+      "Oliver Sayeed"
     ],
     "problem_url": "https://www.uklo.org/wp-content/uploads/2022/05/2016_R2.2-Tocharian.pdf",
     "solution_url": "https://www.uklo.org/wp-content/uploads/2022/05/2016_R2.2-Tocharian.pdf"
@@ -9076,7 +9363,7 @@
     ],
     "genres": [],
     "authors": [
-      "Alexey Pegushev"
+      "Aleksejs Peguševs"
     ],
     "problem_url": "https://www.uklo.org/wp-content/uploads/2022/09/2012.5-Esperanto.pdf",
     "solution_url": "https://www.uklo.org/wp-content/uploads/2022/09/2012.5-Esperanto.pdf"
@@ -12250,7 +12537,7 @@
       "en"
     ],
     "authors": [
-      "Andres Pablo Salanova"
+      "Andrés Pablo Salanova"
     ],
     "genres": [],
     "problem_url": "https://ozclo.org.au/wp-content/uploads/2022/11/2022-R2-problems.pdf",
@@ -12725,7 +13012,7 @@
     "problem_number": 2,
     "title": "Harmongolian",
     "problemese": [
-      "Mongolian"
+      "Khalkha Mongolian"
     ],
     "solverese": [
       "en"
@@ -15652,7 +15939,7 @@
     "title": "Balança a Pança",
     "problemese": [],
     "authors": [
-      "Gustavo Palote da Silva Martins"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -15692,7 +15979,7 @@
       "Ka'apor Sign Language"
     ],
     "authors": [
-      "Gustavo Palote da Silva Martins"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16052,7 +16339,7 @@
       "Ka'apor Sign Language"
     ],
     "authors": [
-      "Gustavo Palote da Silva Martins"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16593,7 +16880,7 @@
       "Quechua"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16732,7 +17019,7 @@
       "Portuguese"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16792,7 +17079,7 @@
       "Georgian"
     ],
     "authors": [
-      "Fernando César"
+      "Fernando César G. Filho"
     ],
     "genres": [],
     "solverese": [
@@ -16852,8 +17139,8 @@
       "Quechua"
     ],
     "authors": [
-      "Fernando César",
-      "Gustavo Baracat"
+      "Fernando César G. Filho",
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16871,7 +17158,7 @@
     "title": "Volta ao Mundo em 80 Dias",
     "problemese": [],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -16929,7 +17216,7 @@
       "Yoruba"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17009,7 +17296,7 @@
       "Mapudungun"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17068,7 +17355,7 @@
       "Portuguese"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17127,7 +17414,7 @@
     "title": "Guilherme",
     "problemese": [],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17185,7 +17472,7 @@
       "Quechua"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17363,7 +17650,7 @@
       "Georgian"
     ],
     "authors": [
-      "Fernando César"
+      "Fernando César G. Filho"
     ],
     "genres": [],
     "solverese": [
@@ -17463,7 +17750,7 @@
       "Quechua"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17523,7 +17810,7 @@
       "Hmong"
     ],
     "authors": [
-      "Gustavo Baracat"
+      "Gustavo Baracat Martins"
     ],
     "genres": [],
     "solverese": [
@@ -17598,7 +17885,7 @@
     "problem_number": 3,
     "title": "Gengis Khan",
     "problemese": [
-      "Mongolian"
+      "Khalkha Mongolian"
     ],
     "authors": [
       "João Henrique Fontes"
@@ -18091,7 +18378,7 @@
       "Waninawa"
     ],
     "authors": [
-      "Gustavo Palote",
+      "Gustavo Palote Martins",
       "Marina Alves Kawamura"
     ],
     "genres": [],
@@ -18150,7 +18437,7 @@
       "Luo"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -18167,7 +18454,7 @@
     "problem_number": 4,
     "title": "Gengis Khan",
     "problemese": [
-      "Mongolian"
+      "Khalkha Mongolian"
     ],
     "authors": [
       "João Henrique Fontes"
@@ -18386,7 +18673,7 @@
       "Wolof"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -18448,7 +18735,7 @@
     ],
     "authors": [
       "Bruno L'Astorina",
-      "Rodrigo Tiradentes"
+      "Rodrigo Pinto Tiradentes"
     ],
     "genres": [],
     "solverese": [
@@ -19249,7 +19536,7 @@
       "Yoruba"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -19286,7 +19573,7 @@
     "problemese": [],
     "authors": [
       "Bruno L'Astorina",
-      "Germano T. Martinelli"
+      "Germano Tiebohl Martinelli"
     ],
     "genres": [],
     "solverese": [
@@ -19305,7 +19592,7 @@
     "problemese": [],
     "authors": [
       "Bruno L'Astorina",
-      "Germano T. Martinelli"
+      "Germano Tiebohl Martinelli"
     ],
     "genres": [],
     "solverese": [
@@ -19325,7 +19612,7 @@
       "Russian"
     ],
     "authors": [
-      "Germano T. Martinelli",
+      "Germano Tiebohl Martinelli",
       "Bruno L'Astorina"
     ],
     "genres": [],
@@ -19404,7 +19691,7 @@
     "title": "Avião",
     "problemese": [],
     "authors": [
-      "Artur Corrêa",
+      "Artur Corrêa Souza",
       "Douglas Teixeira"
     ],
     "genres": [],
@@ -19563,7 +19850,7 @@
       "Mbyá Guaraní"
     ],
     "authors": [
-      "Artur Corrêa"
+      "Artur Corrêa Souza"
     ],
     "genres": [],
     "solverese": [
@@ -20041,7 +20328,7 @@
     "title": "Questão 11",
     "problemese": [],
     "authors": [
-      "Eduardo Martins"
+      "Eduardo Cardoso Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20217,7 +20504,7 @@
       "Xerente"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20237,7 +20524,7 @@
       "Pochuri"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20277,7 +20564,7 @@
       "Ainu"
     ],
     "authors": [
-      "Gustavo Palote"
+      "Gustavo Palote Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20434,7 +20721,7 @@
     "title": "Questão 1",
     "problemese": [],
     "authors": [
-      "Eduardo Martins"
+      "Eduardo Cardoso Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20648,7 +20935,7 @@
       "Swahili"
     ],
     "authors": [
-      "Eduardo Martins"
+      "Eduardo Cardoso Martins"
     ],
     "genres": [],
     "solverese": [
@@ -20764,7 +21051,7 @@
       "Slovenian"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -20784,7 +21071,7 @@
       "Greenlandic"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -20824,7 +21111,7 @@
       "Wayuu"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -20865,7 +21152,7 @@
       "Yine"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -20885,7 +21172,7 @@
       "Kashubian"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -20985,7 +21272,7 @@
       "Tuyuca"
     ],
     "authors": [
-      "Eduardo Martins"
+      "Eduardo Cardoso Martins"
     ],
     "genres": [],
     "solverese": [
@@ -21066,7 +21353,7 @@
       "Carpathian Romani"
     ],
     "authors": [
-      "Ivan Derjanski"
+      "Ivan Derzhanski"
     ],
     "genres": [],
     "solverese": [
@@ -21105,13 +21392,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21132,13 +21419,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21159,13 +21446,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21186,13 +21473,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21213,13 +21500,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21238,13 +21525,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21263,13 +21550,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21290,13 +21577,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21317,13 +21604,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21344,13 +21631,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21371,13 +21658,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21396,13 +21683,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21423,13 +21710,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21450,13 +21737,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21477,13 +21764,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21502,13 +21789,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21529,13 +21816,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21556,13 +21843,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21581,13 +21868,13 @@
     "problemese": [],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21608,13 +21895,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21635,13 +21922,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21663,13 +21950,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21690,13 +21977,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21717,13 +22004,13 @@
     ],
     "authors": [
       "Abel de Santana Filho",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
-      "Eduardo Martins",
+      "Eduardo Cardoso Martins",
       "Stephanie Godiva",
       "Pedro Neves Lopes",
       "Robson Carapeto-Conceição",
-      "Takerou Hayashi"
+      "Takerou Hayashi Sato"
     ],
     "genres": [],
     "solverese": [
@@ -21783,7 +22070,7 @@
       "Romanian"
     ],
     "authors": [
-      "Robson Carapeto",
+      "Robson Carapeto-Conceição",
       "Bruno L'Astorina"
     ],
     "genres": [],
@@ -21804,7 +22091,7 @@
       "Laz"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -21824,7 +22111,7 @@
       "Maxakalí"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -21844,7 +22131,7 @@
       "Cape Verdean Creole"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -21864,7 +22151,7 @@
       "Kayapo"
     ],
     "authors": [
-      "Andrés P. Salanova"
+      "Andrés Pablo Salanova"
     ],
     "genres": [],
     "solverese": [
@@ -21924,7 +22211,7 @@
       "Estonian"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -21944,7 +22231,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -21968,7 +22255,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -21992,7 +22279,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22018,7 +22305,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22042,7 +22329,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22068,7 +22355,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22094,7 +22381,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22118,7 +22405,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22142,7 +22429,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22166,7 +22453,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22190,7 +22477,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22216,7 +22503,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22240,7 +22527,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22264,7 +22551,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22290,7 +22577,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22316,7 +22603,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22340,7 +22627,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22366,7 +22653,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22392,7 +22679,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22416,7 +22703,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22440,7 +22727,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22466,7 +22753,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22492,7 +22779,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22518,7 +22805,7 @@
     "authors": [
       "Abel de Santana Filho",
       "Aleksejs Peguševs",
-      "Andrey Nikulin",
+      "André Nikulin",
       "Bruno L'Astorina",
       "Carolina Senna",
       "Stephanie Godiva",
@@ -22562,7 +22849,7 @@
       "Udmurt"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -22622,7 +22909,7 @@
       "Afrikaans"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -22642,7 +22929,7 @@
       "Munduruku"
     ],
     "authors": [
-      "Andrey Nikulin"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -22743,7 +23030,7 @@
       "Yoruba"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -22764,7 +23051,7 @@
       "Parintintin"
     ],
     "authors": [
-      "André Goiabeira Nikulin Guzmán"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -22804,7 +23091,7 @@
       "Brazilian Sign Language"
     ],
     "authors": [
-      "Abel Santana Filho"
+      "Abel de Santana Filho"
     ],
     "genres": [],
     "solverese": [
@@ -22824,7 +23111,7 @@
       "Turkish"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23001,7 +23288,7 @@
       "Georgian"
     ],
     "authors": [
-      "André Goiabeira Nikulin Guzmán"
+      "André Nikulin"
     ],
     "genres": [],
     "solverese": [
@@ -23121,7 +23408,7 @@
       "Portuguese"
     ],
     "authors": [
-      "Artūrs Semeņuk"
+      "Artūrs Semeņuks"
     ],
     "genres": [],
     "solverese": [
@@ -23204,7 +23491,7 @@
       "Icelandic"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23325,7 +23612,7 @@
       "Italian"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23422,7 +23709,7 @@
       "Turkish"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23461,7 +23748,7 @@
       "Portuguese"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23643,7 +23930,7 @@
     ],
     "authors": [
       "Bruno L'Astorina",
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -23684,7 +23971,7 @@
       "Polish"
     ],
     "authors": [
-      "Robson Carapeto"
+      "Robson Carapeto-Conceição"
     ],
     "genres": [],
     "solverese": [
@@ -26136,7 +26423,7 @@
       "Paiwan"
     ],
     "authors": [
-      "Sam Ahmed"
+      "Samuel Ahmed"
     ],
     "genres": [],
     "solverese": [
@@ -26214,7 +26501,7 @@
       "Iñapari"
     ],
     "authors": [
-      "Sam Ahmed"
+      "Samuel Ahmed"
     ],
     "genres": [],
     "solverese": [
@@ -26472,7 +26759,7 @@
     ],
     "authors": [
       "Jonathan Moodie",
-      "Rosey Bilington"
+      "Rosey Billington"
     ],
     "genres": [],
     "solverese": [
@@ -26688,7 +26975,7 @@
       "Sumo"
     ],
     "authors": [
-      "Sam Ahmed"
+      "Samuel Ahmed"
     ],
     "genres": [],
     "solverese": [
@@ -27703,7 +27990,7 @@
       "Tocharian"
     ],
     "authors": [
-      "Ollie Sayeed"
+      "Oliver Sayeed"
     ],
     "genres": [],
     "solverese": [
@@ -28065,7 +28352,7 @@
       "German"
     ],
     "authors": [
-      "John de Nero"
+      "John DeNero"
     ],
     "genres": [],
     "solverese": [
@@ -28085,8 +28372,8 @@
       "Maxakalí"
     ],
     "authors": [
-      "Alexander Wade",
-      "Pat Littell"
+      "Alex Wade",
+      "Patrick Littell"
     ],
     "genres": [],
     "solverese": [
@@ -28873,7 +29160,7 @@
     ],
     "authors": [
       "Simon Zwarts",
-      "based on work by Kevin Knight"
+      "Kevin Knight"
     ],
     "genres": [],
     "solverese": [
@@ -29009,7 +29296,7 @@
       "Esperanto"
     ],
     "authors": [
-      "Alexey Pegushev"
+      "Aleksejs Peguševs"
     ],
     "genres": [],
     "solverese": [
@@ -29047,7 +29334,7 @@
     "title": "A fox among the h",
     "problemese": [],
     "authors": [
-      "Pat Littell"
+      "Patrick Littell"
     ],
     "genres": [],
     "solverese": [
@@ -29183,7 +29470,7 @@
     "problemese": [],
     "authors": [
       "Noah Smith",
-      "Kevin Gimbel",
+      "Kevin Gimpel",
       "Jason Eisner"
     ],
     "genres": [],
@@ -29516,7 +29803,7 @@
       "Armenian"
     ],
     "authors": [
-      "Dragomir R. Radev"
+      "Dragomir Radev"
     ],
     "genres": [],
     "solverese": [
@@ -29536,7 +29823,7 @@
       "Spanish"
     ],
     "authors": [
-      "Dragomir R. Radev"
+      "Dragomir Radev"
     ],
     "genres": [],
     "solverese": [
@@ -30440,5 +30727,734 @@
     ],
     "problem_url": "https://naclo.org/resources/problems/2007/N2007-H.pdf",
     "solution_url": "https://naclo.org/resources/problems/2007/N2007-HS.pdf"
+  },
+  {
+    "id": "hklo-2019-1",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Taiwanese Southern-Min",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Taiwanese Hokkien"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2019-2",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Czech",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Czech"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2019-3",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Welsh",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Welsh"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2019-4",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Tibetan",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Classical Tibetan",
+      "Lhasa Tibetan",
+      "Khams Tibetan",
+      "Amdo Tibetan"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2019-5",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "5",
+    "title": "Mongolian",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Khalkha Mongolian"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2019-6",
+    "olympiad": "HKLO",
+    "year": 2019,
+    "round": "Individual",
+    "problem_number": "6",
+    "title": "Skolt Sami",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Skolt Sámi"
+    ],
+    "genres": [],
+    "authors": [],
+    "problem_url": "https://drive.google.com/file/d/14bDULRCns1pLOoWj7DS5katgqLxsGTFr/view",
+    "solution_url": "https://drive.google.com/file/d/1fOrMMoNWtbYaAXSUwjpfuC9G4Y_Wh2XH/view"
+  },
+  {
+    "id": "hklo-2020-1",
+    "olympiad": "HKLO",
+    "year": 2020,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Ainu",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Ainu"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "James Britton",
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1rxsLVSD8Ieykpsv4Ez8MPX9oAbDbr-KI/view",
+    "solution_url": "https://drive.google.com/file/d/1mWq5j0YlhPLCcFZcDEOQUBRYpxKkhCjw/view"
+  },
+  {
+    "id": "hklo-2020-2",
+    "olympiad": "HKLO",
+    "year": 2020,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Semitic semi-Seminar on Cognates",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Modern Standard Arabic",
+      "Hebrew"
+    ],
+    "genres": [
+      "phonology"
+    ],
+    "authors": [
+      "Gábor Parti"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1rxsLVSD8Ieykpsv4Ez8MPX9oAbDbr-KI/view",
+    "solution_url": "https://drive.google.com/file/d/1mWq5j0YlhPLCcFZcDEOQUBRYpxKkhCjw/view"
+  },
+  {
+    "id": "hklo-2020-3",
+    "olympiad": "HKLO",
+    "year": 2020,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Kazakh occupations",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Kazakh"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Anran Nason Cao"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1rxsLVSD8Ieykpsv4Ez8MPX9oAbDbr-KI/view",
+    "solution_url": "https://drive.google.com/file/d/1mWq5j0YlhPLCcFZcDEOQUBRYpxKkhCjw/view"
+  },
+  {
+    "id": "hklo-2020-4",
+    "olympiad": "HKLO",
+    "year": 2020,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Thai",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Thai"
+    ],
+    "genres": [
+      "writing"
+    ],
+    "authors": [
+      "Pengye Yang",
+      "Tung-Le Pan"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1rxsLVSD8Ieykpsv4Ez8MPX9oAbDbr-KI/view",
+    "solution_url": "https://drive.google.com/file/d/1mWq5j0YlhPLCcFZcDEOQUBRYpxKkhCjw/view"
+  },
+  {
+    "id": "hklo-2021-1",
+    "olympiad": "HKLO",
+    "year": 2021,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Finnish-Estonian",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Finnish",
+      "Estonian"
+    ],
+    "genres": [
+      "phonology",
+      "morphosyntax"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1epLwQoOPMwz-kea5u4FGl-YhowbFxlIt/view",
+    "solution_url": "https://drive.google.com/file/d/18Dnu4tkklR0RbX7GyGdR6N9NH7vx7BG7/view"
+  },
+  {
+    "id": "hklo-2021-2",
+    "olympiad": "HKLO",
+    "year": 2021,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Hungarian",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Hungarian"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Gábor Parti"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1epLwQoOPMwz-kea5u4FGl-YhowbFxlIt/view",
+    "solution_url": "https://drive.google.com/file/d/18Dnu4tkklR0RbX7GyGdR6N9NH7vx7BG7/view"
+  },
+  {
+    "id": "hklo-2021-3",
+    "olympiad": "HKLO",
+    "year": 2021,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Tundra Nenets",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Tundra Nenets"
+    ],
+    "genres": [
+      "semantics"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1epLwQoOPMwz-kea5u4FGl-YhowbFxlIt/view",
+    "solution_url": "https://drive.google.com/file/d/18Dnu4tkklR0RbX7GyGdR6N9NH7vx7BG7/view"
+  },
+  {
+    "id": "hklo-2022-1",
+    "olympiad": "HKLO",
+    "year": 2022,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Problem 1",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Bauni"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Gustavo Palote Martins"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1ue6ZLnFiPN_8g7-xXX8tYrA9w8hGQn5z/view",
+    "solution_url": "https://drive.google.com/file/d/1X3REDsdi-UyOpjcEnmj1Q-7ktowPxH69/view"
+  },
+  {
+    "id": "hklo-2022-2",
+    "olympiad": "HKLO",
+    "year": 2022,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Problem 2",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Solresol"
+    ],
+    "genres": [
+      "writing",
+      "morphosyntax"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1ue6ZLnFiPN_8g7-xXX8tYrA9w8hGQn5z/view",
+    "solution_url": "https://drive.google.com/file/d/1X3REDsdi-UyOpjcEnmj1Q-7ktowPxH69/view"
+  },
+  {
+    "id": "hklo-2022-3",
+    "olympiad": "HKLO",
+    "year": 2022,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Problem 3",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "North Levantine Arabic",
+      "Sudanese Arabic",
+      "Tunisian Arabic",
+      "Moroccan Arabic"
+    ],
+    "genres": [
+      "writing",
+      "phonology"
+    ],
+    "authors": [
+      "Tung-Le Pan"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1ue6ZLnFiPN_8g7-xXX8tYrA9w8hGQn5z/view",
+    "solution_url": "https://drive.google.com/file/d/1X3REDsdi-UyOpjcEnmj1Q-7ktowPxH69/view"
+  },
+  {
+    "id": "hklo-2022-4",
+    "olympiad": "HKLO",
+    "year": 2022,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Problem 4",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Lutos"
+    ],
+    "genres": [
+      "numbers"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1ue6ZLnFiPN_8g7-xXX8tYrA9w8hGQn5z/view",
+    "solution_url": "https://drive.google.com/file/d/1X3REDsdi-UyOpjcEnmj1Q-7ktowPxH69/view"
+  },
+  {
+    "id": "hklo-2023-1",
+    "olympiad": "HKLO",
+    "year": 2023,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Problem 1",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Romanian"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1EMpVWmJSZ-2R4zgUPGSX8K3IZnGhayj_/view",
+    "solution_url": "https://drive.google.com/file/d/1RZRlKnmUB-VWgQNd-kQc4iqHGaBP6wR-/view"
+  },
+  {
+    "id": "hklo-2023-2",
+    "olympiad": "HKLO",
+    "year": 2023,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Problem 2",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Iberian"
+    ],
+    "genres": [
+      "writing"
+    ],
+    "authors": [
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1EMpVWmJSZ-2R4zgUPGSX8K3IZnGhayj_/view",
+    "solution_url": "https://drive.google.com/file/d/1RZRlKnmUB-VWgQNd-kQc4iqHGaBP6wR-/view"
+  },
+  {
+    "id": "hklo-2023-3",
+    "olympiad": "HKLO",
+    "year": 2023,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Problem 3",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Yao"
+    ],
+    "genres": [
+      "kinship"
+    ],
+    "authors": [
+      "Vlad Neacșu",
+      "Tung-Le Pan"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1EMpVWmJSZ-2R4zgUPGSX8K3IZnGhayj_/view",
+    "solution_url": "https://drive.google.com/file/d/1RZRlKnmUB-VWgQNd-kQc4iqHGaBP6wR-/view"
+  },
+  {
+    "id": "hklo-2023-4",
+    "olympiad": "HKLO",
+    "year": 2023,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Problem 4",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Epun"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Vlad Neacșu",
+      "Adina Dragomirescu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1EMpVWmJSZ-2R4zgUPGSX8K3IZnGhayj_/view",
+    "solution_url": "https://drive.google.com/file/d/1RZRlKnmUB-VWgQNd-kQc4iqHGaBP6wR-/view"
+  },
+  {
+    "id": "hklo-2024-1",
+    "olympiad": "HKLO",
+    "year": 2024,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Problem 1",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Tiene"
+    ],
+    "genres": [
+      "phonology",
+      "morphosyntax"
+    ],
+    "authors": [
+      "Simi Hellsten"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1OPa79Bep3yFKh_WzT6xMIgHuJWy0iUq3/view",
+    "solution_url": "https://drive.google.com/file/d/1cIjpYut4X9gzvmc9qsxENowtvyeiqW1w/view"
+  },
+  {
+    "id": "hklo-2024-2",
+    "olympiad": "HKLO",
+    "year": 2024,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Problem 2",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Hmu"
+    ],
+    "genres": [
+      "numbers"
+    ],
+    "authors": [
+      "Tung-Le Pan"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1OPa79Bep3yFKh_WzT6xMIgHuJWy0iUq3/view",
+    "solution_url": "https://drive.google.com/file/d/1cIjpYut4X9gzvmc9qsxENowtvyeiqW1w/view"
+  },
+  {
+    "id": "hklo-2024-3",
+    "olympiad": "HKLO",
+    "year": 2024,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Problem 3",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Tlingit"
+    ],
+    "genres": [
+      "semantics"
+    ],
+    "authors": [
+      "Pratyush Vempati"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1OPa79Bep3yFKh_WzT6xMIgHuJWy0iUq3/view",
+    "solution_url": "https://drive.google.com/file/d/1cIjpYut4X9gzvmc9qsxENowtvyeiqW1w/view"
+  },
+  {
+    "id": "hklo-2024-4",
+    "olympiad": "HKLO",
+    "year": 2024,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Problem 4",
+    "solverese": [
+      "en"
+    ],
+    "problemese": [
+      "Paunaka"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Kazune Sato",
+      "Vlad Neacșu"
+    ],
+    "problem_url": "https://drive.google.com/file/d/1OPa79Bep3yFKh_WzT6xMIgHuJWy0iUq3/view",
+    "solution_url": "https://drive.google.com/file/d/1cIjpYut4X9gzvmc9qsxENowtvyeiqW1w/view"
+  },
+  {
+    "id": "hklo-2025-1",
+    "olympiad": "HKLO",
+    "year": 2025,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Problem 1",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Tocharian B"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Tam Lok Hang"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2025-2",
+    "olympiad": "HKLO",
+    "year": 2025,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Problem 2",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Nuxalk"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Faraz Ahmed"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2025-3",
+    "olympiad": "HKLO",
+    "year": 2025,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Problem 3",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Meyah"
+    ],
+    "genres": [
+      "numbers"
+    ],
+    "authors": [
+      "Farhan Ishraq"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2025-4",
+    "olympiad": "HKLO",
+    "year": 2025,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Problem 4",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Classical Tibetan"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Wong Tok Shing Henry"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2025_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2026-1",
+    "olympiad": "HKLO",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "1",
+    "title": "Problem 1",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Shanghainese"
+    ],
+    "genres": [
+      "writing"
+    ],
+    "authors": [
+      "Farhan Ishraq"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2026-2",
+    "olympiad": "HKLO",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "2",
+    "title": "Problem 2",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Guarani"
+    ],
+    "genres": [
+      "morphosyntax"
+    ],
+    "authors": [
+      "Daniel Lin Cheuk Hang",
+      "Tam Lok Hang"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2026-3",
+    "olympiad": "HKLO",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "3",
+    "title": "Problem 3",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Maltese",
+      "Modern Standard Arabic"
+    ],
+    "genres": [
+      "phonology"
+    ],
+    "authors": [
+      "Wong Tok Shing Henry"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Solutions.pdf"
+  },
+  {
+    "id": "hklo-2026-4",
+    "olympiad": "HKLO",
+    "year": 2026,
+    "round": "Individual",
+    "problem_number": "4",
+    "title": "Problem 4",
+    "solverese": [
+      "en",
+      "zh-tr"
+    ],
+    "problemese": [
+      "Chiquitano"
+    ],
+    "genres": [
+      "semantics"
+    ],
+    "authors": [
+      "Jenny Cao"
+    ],
+    "problem_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Problems.pdf",
+    "solution_url": "https://www.polyu.edu.hk/fh/docdrive/HKLO/HKLO2026_Solutions.pdf"
   }
 ]
